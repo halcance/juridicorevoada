@@ -2,14 +2,20 @@
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link" href="index.php">
-              <i class="mdi mdi-grid-large menu-icon"></i>
+              <i class="menu-icon mdi mdi-home"></i>
               <span class="menu-title">Início</span>
             </a>
           </li>
           <li class="nav-item nav-category">SERVIÇOS</li>
           <li class="nav-item">
+            <a class="nav-link  <?php if($err_profile == true) { echo'disabled text-danger';}?>" href="../admin/assistencia.php">
+              <i class="menu-icon mdi mdi-bookmark-check"></i>
+              <span class="menu-title">ASSISTÊNCIAS</span>
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link <?php if($err_profile == true) { echo'disabled text-danger';}?>" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="menu-icon mdi mdi-floor-plan"></i>
+              <i class="menu-icon mdi mdi-briefcase-upload"></i>
               <span class="menu-title">FAMÍLIAS</span>
               <i class="menu-arrow"></i> 
             </a>
@@ -23,7 +29,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link  <?php if($err_profile == true) { echo'disabled text-danger';}?>" href="../admin/trocanomes.php">
-              <i class="menu-icon mdi mdi-floor-plan"></i>
+              <i class="menu-icon mdi mdi-alphabetical"></i>
               <span class="menu-title">TROCA DE NOME</span>
             </a>
           </li>
@@ -76,7 +82,8 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item nav-category">pages</li>
+          <?php if($uss_rank > 1)  {?>
+          <li class="nav-item nav-category">ADMINISTRAÇÃO</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <i class="menu-icon mdi mdi-account-circle-outline"></i>
@@ -86,9 +93,12 @@
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="../admin/admuser.php"> Gerenciar </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../admin/edituser.php"> Editar </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../admin/admcna.php"> CNA </a></li>
               </ul>
             </div>
           </li>
+          <?php }?>
           <li class="nav-item nav-category">help</li>
           <li class="nav-item">
             <a class="nav-link" href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.html">

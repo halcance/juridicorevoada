@@ -3,60 +3,14 @@ ob_start();
 require('../config.php');
 include('../includes/verificacao.php');
 
-$page_title = "GERENCIAR USUÁRIOS";
+$page_title = "EDITAR USUÁRIOS";
 
-$stmt = $pdo->prepare("SELECT * FROM users ORDER BY id ASC");
+$stmt = $pdo->prepare("SELECT * FROM users where active=1");
 $stmt->execute();
-$total = $stmt->rowCount();
 
 $data = new DateTime();
 $dataform = $data->format('d-m-Y H:i:s');
 
-// ATIVA REGISTROS QUE ESTÃO IRREGULARES
-if(isset($_GET['active'])){
-
-    $id = (int)$_GET['active'];
-    $query = "UPDATE users SET active=:active WHERE id=$id";
-    $edit = $pdo->prepare($query);
-    $edit->bindParam(':active', $param_active, PDO::PARAM_STR);
-    // PARAMETROS
-    $param_active = "1";
-    if($edit->execute()){
-        $usuario = $_SESSION['username'];
-              $mensagem = "O usuário ".$_SESSION['username']." ATIVOU o usuário ".$id;
-              $sql = "INSERT INTO logs(data, mensagem, usuario) VALUES(:data, :mensagem, :usuario)";
-              $stmt = $pdo->prepare($sql);
-              $stmt->bindParam(":data", $dataform, PDO::PARAM_STR);
-              $stmt->bindParam(":mensagem", $mensagem, PDO::PARAM_STR);
-              $stmt->bindParam(":usuario", $usuario, PDO::PARAM_STR);
-              $stmt->execute();
-            // CRIAR NOVO WEBHOOK COM NOVOS PARAMETROS OU ALTERAR O EXISTENTE
-            //include_once("../cna/cnaoab.php");
-            header("Location: ../admin/admuser.php");
-            }
-  }
-  if(isset($_GET['deactive'])){
-
-    $id = (int)$_GET['deactive'];
-    $query = "UPDATE users SET active=:active WHERE id=$id";
-    $edit = $pdo->prepare($query);
-    $edit->bindParam(':active', $param_active, PDO::PARAM_STR);
-    // PARAMETROS
-    $param_active = "0";
-    if($edit->execute()){
-      $usuario = $_SESSION['username'];
-              $mensagem = "O usuário ".$_SESSION['username']." DESATIVOU o usuário ".$id;
-              $sql = "INSERT INTO logs(data, mensagem, usuario) VALUES(:data, :mensagem, :usuario)";
-              $stmt = $pdo->prepare($sql);
-              $stmt->bindParam(":data", $dataform, PDO::PARAM_STR);
-              $stmt->bindParam(":mensagem", $mensagem, PDO::PARAM_STR);
-              $stmt->bindParam(":usuario", $usuario, PDO::PARAM_STR);
-              $stmt->execute();
-            // CRIAR NOVO WEBHOOK COM NOVOS PARAMETROS OU ALTERAR O EXISTENTE
-            //include_once("../cna/cnaoab.php");
-            header("Location: ../admin/admuser.php");
-            }
-  }
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -76,12 +30,13 @@ if(isset($_GET['active'])){
       <div class="main-panel">        
         <div class="content-wrapper">
           <div class="row">
+        
                       <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Gerenciar <code><?php echo $total; ?></code> usuários</h4>
+                  <h4 class="card-title">EDITAR USUÁRIO</h4>
                   <p class="card-description">
-                    Utilize o painel abaixo para  <code>ativar</code> ou <code>desativar</code> usuários, você só pode realizar essas ações com pessoas abaixo do seu rank.
+                    Selecione o usuário abaixo que você deseja alterar:
                   </p>
                   <div class="table-responsive">
                     <table class="table table-striped">
@@ -150,8 +105,7 @@ if(isset($_GET['active'])){
                           } ?>
                           </td>
                           <td>
-                          <a class="btn btn-sm btn-primary <?php if($dados["active"] == 1){echo "disabled";}?>" href="?active=<?php echo $dados["id"] ?>"><i class="mdi mdi-account-plus"></i></a>
-                          <a class="btn btn-sm btn-secondary <?php if($dados["active"] == 0 || $dados["rank"] >= $_SESSION["rank"]){echo "disabled";}?>" href="?deactive=<?php echo $dados["id"] ?>"><i class="mdi mdi-account-minus"></i></a>
+                          <a class="btn btn-sm btn-primary <?php if($dados["rank"] >= $_SESSION["rank"]){echo "disabled";}?>" href="../admin/editprof.php?edit=<?php echo $dados["id"] ?>"><i class="mdi mdi-account-minus"></i></a>
                           </td>
                         </tr>
                 <?php } ?>

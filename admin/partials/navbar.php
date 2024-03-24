@@ -22,7 +22,7 @@
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item dropdown d-none d-lg-block">
+          <!-- <li class="nav-item dropdown d-none d-lg-block">
             <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
               <a class="dropdown-item py-3" >
@@ -54,22 +54,22 @@
                 </div>
               </a>
             </div>
-          </li>
-          <li class="nav-item d-none d-lg-block">
+          </li> -->
+          <!-- <li class="nav-item d-none d-lg-block">
             <div id="datepicker-popup" class="input-group date datepicker navbar-date-picker">
               <span class="input-group-addon input-group-prepend border-right">
                 <span class="icon-calendar input-group-text calendar-icon"></span>
               </span>
               <input type="text" class="form-control">
             </div>
-          </li>
-          <li class="nav-item">
+          </li> -->
+          <!-- <li class="nav-item">
             <form class="search-form" action="#">
               <i class="icon-search"></i>
               <input type="search" class="form-control" placeholder="Search Here" title="Search here">
             </form>
-          </li>
-          <li class="nav-item dropdown">
+          </li> -->
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
               <i class="icon-mail icon-lg"></i>
             </a>
@@ -106,8 +106,8 @@
                 </div>
               </a>
             </div>
-          </li>
-          <li class="nav-item dropdown"> 
+          </li> -->
+          <!-- <li class="nav-item dropdown"> 
             <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="icon-bell"></i>
               <span class="count"></span>
@@ -146,7 +146,7 @@
                 </div>
               </a>
             </div>
-          </li>
+          </li> -->
           <li class="nav-item dropdown d-none d-lg-block user-dropdown">
             <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
               <img class="img-xs rounded-circle" src="<?php echo $uss_image;?>" alt="Profile image"> </a>
@@ -155,9 +155,9 @@
                 <img class="img-md rounded-circle" width="50px" src="<?php echo $uss_image;?>" alt="Profile image">
                 <p class="mb-1 mt-3 font-weight-semibold"><?php echo $uss_name; ?></p>
                 <p class="fw-light text-muted mb-0"><?php echo $uss_username; ?></p>
-                <p class="fw-light text-muted mb-0"><span class="badge text-bg-secondary text-black"><?php echo $uss_role; ?></span></p>
+                <p class="fw-light text-muted mb-0"><span class="text-info"><?php echo $uss_role; ?></span></p>
               </div>
-              <a class="dropdown-item" href="../admin/profile.php?u=<?php echo $_SESSION['id']; ?>"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> Meu Perfil <span class="badge badge-pill badge-danger">1</span></a>
+              <a class="dropdown-item" href="../admin/profile.php?u=<?php echo $_SESSION['id']; ?>"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> Meu Perfil <?php if($err_profile == true){?><span class="badge badge-pill badge-danger">1</span><?php }?></a>
               <a class="dropdown-item disabled"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
               <a class="dropdown-item disabled"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
               <a class="dropdown-item disabled"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>

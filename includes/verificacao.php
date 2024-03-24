@@ -24,7 +24,7 @@ else { if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 }
 
 // Pega todos os dados do usuário
-$uss = $pdo->prepare("SELECT id,rank,name,username,role,image,rg,passport FROM users WHERE id=:id");
+$uss = $pdo->prepare("SELECT * FROM users WHERE id=:id");
 $uss->bindParam(":id", $param_id, PDO::PARAM_INT);
 $param_id = $_SESSION["id"];
 $uss->execute();
@@ -34,10 +34,13 @@ $uss_id = $veruser["id"];
 $uss_rank = $veruser["rank"];
 $uss_name = $veruser["name"];
 $uss_username = $veruser["username"];
+$uss_cna = $veruser["cna"];
+$uss_org = $veruser["org"];
 $uss_role = $veruser["role"];
 $uss_image = $veruser["image"];
 $uss_rg = $veruser["rg"];
 $uss_passport = $veruser["passport"];
+$uss_created = $veruser["created"];
 
 if($uss_name == NULL){
     $err_profile = true;
