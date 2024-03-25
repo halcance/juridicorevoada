@@ -158,9 +158,9 @@
                 <p class="fw-light text-muted mb-0"><span class="text-info"><?php echo $uss_role; ?></span></p>
               </div>
               <a class="dropdown-item" href="../admin/profile.php?u=<?php echo $_SESSION['id']; ?>"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> Meu Perfil <?php if($err_profile == true){?><span class="badge badge-pill badge-danger">1</span><?php }?></a>
-              <a class="dropdown-item disabled"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
-              <a class="dropdown-item disabled"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
-              <a class="dropdown-item disabled"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
+              <a class="dropdown-item disabled"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Mensagens</a>
+              <a class="dropdown-item disabled"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Atividade</a>
+              <a class="dropdown-item disabled"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i>FAQ</a>
               <a class="dropdown-item" href="../admin/logout.php"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sair</a>
             </div>
           </li>

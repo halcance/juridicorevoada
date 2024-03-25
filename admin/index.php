@@ -5,8 +5,9 @@ include('../includes/verificacao.php');
 
 $page_title = "Administração";
 
-$stmt = $pdo->prepare("SELECT * FROM avisos_sysadmin");
+$stmt = $pdo->prepare("SELECT id FROM users");
 $stmt->execute();
+$mtotal = $stmt->rowCount();
 
 ?>
 
@@ -52,9 +53,9 @@ $stmt->execute();
                   </ul>
                   <div>
                     <div class="btn-wrapper">
-                      <a href="#" class="btn btn-otline-dark align-items-center"><i class="icon-share"></i> Share</a>
-                      <a href="#" class="btn btn-otline-dark"><i class="icon-printer"></i> Print</a>
-                      <a href="#" class="btn btn-primary text-white me-0"><i class="icon-download"></i> Export</a>
+                      <!-- <a href="#" class="btn btn-otline-dark align-items-center"><i class="icon-share"></i> Share</a> -->
+                      <!-- <a href="#" class="btn btn-otline-dark"><i class="icon-printer"></i> Print</a> -->
+                      <!-- <a href="#" class="btn btn-primary text-white me-0"><i class="icon-download"></i> Export</a> -->
                     </div>
                   </div>
                 </div>
@@ -64,9 +65,9 @@ $stmt->execute();
                       <div class="col-sm-12">
                         <div class="statistics-details d-flex align-items-center justify-content-between">
                           <div>
-                            <p class="statistics-title">Bounce Rate</p>
-                            <h3 class="rate-percentage">32.53%</h3>
-                            <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>-0.5%</span></p>
+                            <p class="statistics-title">USUÁRIOS CADASTRADOS</p>
+                            <h3 class="rate-percentage"><?php echo $mtotal; ?></h3>
+                            <p class="text-success d-flex"><i class="mdi mdi-menu-up"></i><span>+0.1%</span></p>
                           </div>
                           <div>
                             <p class="statistics-title">Page Views</p>
