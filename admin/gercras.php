@@ -5,10 +5,12 @@ include('../includes/verificacao.php');
 
 $page_title = "GERENCIAR FAMÍLIAS";
 
+// SELECIONA TODAS AS FAMÍLIAS
 $stmt = $pdo->prepare("SELECT * FROM cras");
 $stmt->execute();
 $total = $stmt->rowCount();
 
+// CONFIGURA A DATA
 $data = new DateTime();
 $dataform = $data->format('d-m-Y H:i:s');
 
@@ -77,6 +79,7 @@ if(isset($_GET['active'])){
         <div class="content-wrapper">
         <div class="row">
       <?php while($dados = $stmt->fetch(PDO::FETCH_ASSOC)) { 
+
         ?>
     <div class="col-md-4">
     <div class="card text-black">
@@ -90,7 +93,7 @@ if(isset($_GET['active'])){
         <p class="card-text">Cadastrado em <?php echo $dados['registro']; ?></p>
         <p class="card-text">Modificado em <?php echo $dados['modificado']; ?></p>
         <p class="card-text">por <?php echo $dados['user']; ?></p>
-        <a class="btn btn-sm btn-secondary" href="../admin/admcras.php?edcras=<?php echo $dados["id"] ?>"><i class="mdi mdi-comment-plus-outline"></i></a>
+        <a class="btn btn-sm btn-secondary" href="../admin/craspend.php?edcras=<?php echo $dados["id"] ?>"><i class="mdi mdi-comment-plus-outline"></i></a>
         <?php if($_SESSION["rank"] >= 3) { ?>
         <a class="btn btn-sm btn-primary" href="../admin/admcras.php?edcras=<?php echo $dados["id"] ?>"><i class="mdi mdi-border-color"></i></a>
           <?php  } ?>

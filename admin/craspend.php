@@ -146,7 +146,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                           <?php echo $dados["user"]; ?>
                           </td>
                           <td>
-                          <a class="btn btn-sm btn-primary" href="../admin/craspend.php?editpend=<?php echo $dados["id"] ?>"><i class="mdi mdi-border-color"></i></a>
+                          <a class="btn btn-sm btn-success" href="../admin/craspend.php?editpend=<?php echo $dados["id"] ?>"><i class="mdi mdi-checkbox-marked-circle-outline"></i></a>
                           </td>
                         </tr>
                 <?php } ?>
