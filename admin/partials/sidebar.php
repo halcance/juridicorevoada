@@ -8,12 +8,12 @@
             </li>
           <li class="nav-item nav-category">SERVIÇOS</li>
           <li class="nav-item">
-            <a class="nav-link <?php if($err_profile == true) { echo'disabled text-danger';}?>" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link <?php if($err_profile == true) { echo'disabled text-danger';}?>" data-bs-toggle="collapse" href="#assist" aria-expanded="false" aria-controls="assist">
               <i class="menu-icon mdi mdi-bookmark-check"></i>
               <span class="menu-title">ASSISTÊNCIAS</span>
               <i class="menu-arrow"></i> 
             </a>
-            <div class="collapse" id="ui-basic">
+            <div class="collapse" id="assist">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="../admin/assistencia.php">Registrar</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../admin/verassistencia.php">Visualizar</a></li>
@@ -21,12 +21,25 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link <?php if($err_profile == true) { echo'disabled text-danger';}?>" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link <?php if($err_profile == true) { echo'disabled text-danger';}?>" data-bs-toggle="collapse" href="#nome" aria-expanded="false" aria-controls="assist">
+              <i class="menu-icon mdi mdi-alphabetical"></i>
+              <span class="menu-title">TROCA DE NOME</span>
+              <i class="menu-arrow"></i> 
+            </a>
+            <div class="collapse" id="nome">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../admin/trocanomes.php">Registrar</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../admin/vernomes.php">Visualizar</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <?php if($err_profile == true) { echo'disabled text-danger';}?>" data-bs-toggle="collapse" href="#cras" aria-expanded="false" aria-controls="cras">
               <i class="menu-icon mdi mdi-briefcase-upload"></i>
               <span class="menu-title">FAMÍLIAS</span>
               <i class="menu-arrow"></i> 
             </a>
-            <div class="collapse" id="ui-basic">
+            <div class="collapse" id="cras">
               <ul class="nav flex-column sub-menu">
               <?php if($uss_rank >= 3)  {?>
                 <li class="nav-item"> <a class="nav-link" href="../admin/cadfam.php">Cadastrar</a></li>
@@ -36,12 +49,7 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link  <?php if($err_profile == true) { echo'disabled text-danger';}?>" href="../admin/trocanomes.php">
-              <i class="menu-icon mdi mdi-alphabetical"></i>
-              <span class="menu-title">TROCA DE NOME</span>
-            </a>
-          </li>
+      
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
               <i class="menu-icon mdi mdi-layers-outline"></i>

@@ -30,7 +30,7 @@ $dataform = $data->format('d-m-Y H:i:s');
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-    $query = "INSERT INTO nomes (idu,rg,old,new,user,date) VALUES (:idu, :rg, :old, :new, :user, :data)";
+    $query = "INSERT INTO nomes (idu,rg,old,new,user,data) VALUES (:idu, :rg, :old, :new, :user, :data)";
     $edit = $pdo->prepare($query);
     $edit->bindParam(':idu', $_POST["passaporte"], PDO::PARAM_INT);
     $edit->bindParam(':rg', $_POST["registro"], PDO::PARAM_STR);
