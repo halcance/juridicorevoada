@@ -20,8 +20,8 @@ include('includes/head.php');
         <div class="col-lg-12">
           <div class="breadcrumb_iner text-center">
             <div class="breadcrumb_iner_item">
-            <h2>Regimento Interno</h2>
-              <p><span>O regimento interno visa garantir a ordem, eficiência e bom funcionamento da instituição, assegurando que todos os envolvidos sigam um conjunto de diretrizes comuns. Por meio dessas regras, busca-se promover a disciplina, a transparência e a igualdade de condições entre os membros.</span></p>
+            <h2>Código Penal</h2>
+              <p><span>O código processual é um conjunto de normas que regulam o processo judicial, estabelecendo os procedimentos e regras a serem seguidas pelas partes envolvidas em um litígio perante o Judiciário. Ele define as etapas que devem ser cumpridas desde o início do processo até o seu encerramento, determinando prazos, competências, recursos e formas de atuação das partes e do juiz.</span></p>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@ include('includes/head.php');
 
       <div class="row">
         <div class="col-12">
-          <h2 class="contact-title">Capítulo I - DISPOSIÇÕES GERAIS</h2>
+          <h2 class="contact-title">Capítulo I - DO INQUÉRITO POLICIAL</h2>
           <br>
           <br>
           <p>⚖️ <strong>Art. 1</strong> Não é permitido ingressar no Poder Judiciário estando com ficha criminal na polícia.</p>
@@ -57,7 +57,7 @@ include('includes/head.php');
           <br>
         </div>
         <div class="col-12">
-          <h2 class="contact-title">Capítulo II - DA ADVOCACIA</h2>
+          <h2 class="contact-title">Capítulo II - DA AUDIÊNCIA DE INSTRUÇÃO E JULGAMENTO</h2>
           <br>
           <br>
           <p>⚖️ <strong>Art. 7</strong> As atividades da advocacia são:</p>
@@ -90,7 +90,7 @@ include('includes/head.php');
             <br>
         </div>
         <div class="col-12">
-          <h2 class="contact-title">Capítulo III - DO PODER JUDICIÁRIO</h2>
+          <h2 class="contact-title">Capítulo III - DO HABEAS CORPUS E SEU PROCESSO</h2>
           <br>
           <br>
           <p>⚖️ <strong>Art. 12</strong> O ingresso na carreira da magistratura inicia-se através de concurso público do tribunal de justiça.</p>
@@ -154,7 +154,7 @@ include('includes/head.php');
 
         </div>
         <div class="col-12">
-          <h2 class="contact-title">Capítulo IV - DOS PODERES</h2>
+          <h2 class="contact-title">Capítulo IV - DA BUSCA E DA APREENSÃO</h2>
           <br>
           <br>
             <p>⚖️ <strong>Art. 26</strong> O Tribunal de Justiça é constituído da seguinte forma hierárquica:</p>
@@ -200,7 +200,7 @@ include('includes/head.php');
             <br>
         </div>
         <div class="col-12">
-          <h2 class="contact-title">Capítulo V - DA CONDUTA</h2>
+          <h2 class="contact-title">Capítulo V - DO JUIZ</h2>
           <br>
           <br>
             <p>⚖️ <strong>Art.31</strong> Durante o exercício da função é obrigatório a utilização de roupas sociais e em audiências é obrigatório o uso de terno.</p>
@@ -217,7 +217,7 @@ include('includes/head.php');
             <br>
         </div>
         <div class="col-12">
-          <h2 class="contact-title">Capítulo VI - DAS PENALIDADES</h2>
+          <h2 class="contact-title">Capítulo VI - DOS PERITOS</h2>
           <br>
           <br>
             <p>⚖️ <strong>Art. 34</strong> As penalidades são:</p>
@@ -234,7 +234,7 @@ include('includes/head.php');
             <br>
         </div>
         <div class="col-12">
-          <h2 class="contact-title">Capítulo VII - DEFENSORIA PÚBLICA</h2>
+          <h2 class="contact-title">Capítulo VII - DOS DOCUMENTOS</h2>
           <br>
           <br>
             <p>⚖️ <strong>Art. 37</strong> A Defensoria Pública fica limitado a assistência jurídica.</p>
@@ -244,10 +244,23 @@ include('includes/head.php');
             <br>
           
         </div>
-        <p><i class="bi bi-asterisk"></i> Atualizado em 28 de Março de 2024</p>
 
-      
-      </div>
+      <div class="col-12">
+          <h2 class="contact-title">Capítulo VIII - DA PRISÃO EM FLAGRANTE</h2>
+          <br>
+        </div>
+        <div class="col-12">
+          <h2 class="contact-title">Capítulo IX - DA RESTITUIÇÃO DAS COISAS APREENDIDAS</h2>
+          <br>
+        </div>
+        <div class="col-12">
+          <h2 class="contact-title">Capítulo X - AUDIÊNCIA DE CUSTÓDIA</h2>
+          <br>
+        </div>
+        <div class="col-12">
+          <h2 class="contact-title">Capítulo XI - FORO PRIVILEGIADO</h2>
+          <br>
+        </div>
     </div>
   </section>
   <!-- ================ contact section end ================= -->

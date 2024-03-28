@@ -20,8 +20,8 @@ include('includes/head.php');
         <div class="col-lg-12">
           <div class="breadcrumb_iner text-center">
             <div class="breadcrumb_iner_item">
-            <h2>Regimento Interno</h2>
-              <p><span>O regimento interno visa garantir a ordem, eficiência e bom funcionamento da instituição, assegurando que todos os envolvidos sigam um conjunto de diretrizes comuns. Por meio dessas regras, busca-se promover a disciplina, a transparência e a igualdade de condições entre os membros.</span></p>
+            <h2>Código Penal</h2>
+              <p><span>O código processual é um conjunto de normas que regulam o processo judicial, estabelecendo os procedimentos e regras a serem seguidas pelas partes envolvidas em um litígio perante o Judiciário. Ele define as etapas que devem ser cumpridas desde o início do processo até o seu encerramento, determinando prazos, competências, recursos e formas de atuação das partes e do juiz.</span></p>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@ include('includes/head.php');
           <br>
         </div>
         <div class="col-12">
-          <h2 class="contact-title">Capítulo II - DA ADVOCACIA</h2>
+          <h2 class="contact-title">Capítulo II - CRIMES CONTRA A VIDA</h2>
           <br>
           <br>
           <p>⚖️ <strong>Art. 7</strong> As atividades da advocacia são:</p>
@@ -90,7 +90,7 @@ include('includes/head.php');
             <br>
         </div>
         <div class="col-12">
-          <h2 class="contact-title">Capítulo III - DO PODER JUDICIÁRIO</h2>
+          <h2 class="contact-title">Capítulo III - CRIMES CONTRA DIREITOS FUNDAMENTAIS</h2>
           <br>
           <br>
           <p>⚖️ <strong>Art. 12</strong> O ingresso na carreira da magistratura inicia-se através de concurso público do tribunal de justiça.</p>
@@ -154,7 +154,7 @@ include('includes/head.php');
 
         </div>
         <div class="col-12">
-          <h2 class="contact-title">Capítulo IV - DOS PODERES</h2>
+          <h2 class="contact-title">Capítulo IV - CRIMES CONTRA A LIBERDADE PESSOAL</h2>
           <br>
           <br>
             <p>⚖️ <strong>Art. 26</strong> O Tribunal de Justiça é constituído da seguinte forma hierárquica:</p>
@@ -200,7 +200,7 @@ include('includes/head.php');
             <br>
         </div>
         <div class="col-12">
-          <h2 class="contact-title">Capítulo V - DA CONDUTA</h2>
+          <h2 class="contact-title">Capítulo V - CRIMES CONTRA A LIBERDADE PESSOAL</h2>
           <br>
           <br>
             <p>⚖️ <strong>Art.31</strong> Durante o exercício da função é obrigatório a utilização de roupas sociais e em audiências é obrigatório o uso de terno.</p>
@@ -217,37 +217,15 @@ include('includes/head.php');
             <br>
         </div>
         <div class="col-12">
-          <h2 class="contact-title">Capítulo VI - DAS PENALIDADES</h2>
+          <h2 class="contact-title">Capítulo VI - </h2>
           <br>
-          <br>
-            <p>⚖️ <strong>Art. 34</strong> As penalidades são:</p>
-            <br>
-            <p>Advertência Verbal</p>
-            <p>Advertência¹</p>
-            <p>Advertência²</p>
-            <p>Exoneração</p>
-            <br>
-            <p>⚖️ <strong>Art. 35</strong> O acúmulo ou reincidência em advertências poderá ocasionar em exoneração imediata.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 36</strong> A ausência das atividades jurídicas injustificadas em prazos maiores que três (03) dias poderá acarretar em exoneração imediata.</p>
-            <br>
         </div>
         <div class="col-12">
-          <h2 class="contact-title">Capítulo VII - DEFENSORIA PÚBLICA</h2>
+          <h2 class="contact-title">Capítulo VI - </h2>
           <br>
-          <br>
-            <p>⚖️ <strong>Art. 37</strong> A Defensoria Pública fica limitado a assistência jurídica.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 38</strong> Necessário pagamento de taxa semanal, na falta a licença será suspensa.</p>
-            <br>
-          
         </div>
-        <p><i class="bi bi-asterisk"></i> Atualizado em 28 de Março de 2024</p>
-
-      
-      </div>
+        
+        
     </div>
   </section>
   <!-- ================ contact section end ================= -->

@@ -29,8 +29,8 @@
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="regimentointerno.php">Regimento Interno</a>
-                                        <a class="dropdown-item disabled" href="single-blog.php">Código Penal</a>
-                                        <a class="dropdown-item disabled" href="elements.php">Código Processual</a>
+                                        <a class="dropdown-item" href="codigopenal.php">Código Penal</a>
+                                        <a class="dropdown-item" href="codigoprocessual.php">Código Processual</a>
                                     </div>
                                 </li>
                             </ul>
