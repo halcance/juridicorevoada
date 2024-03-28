@@ -8,10 +8,17 @@
             </li>
           <li class="nav-item nav-category">SERVIÇOS</li>
           <li class="nav-item">
-            <a class="nav-link  <?php if($err_profile == true) { echo'disabled text-danger';}?>" href="../admin/assistencia.php">
+            <a class="nav-link <?php if($err_profile == true) { echo'disabled text-danger';}?>" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="menu-icon mdi mdi-bookmark-check"></i>
               <span class="menu-title">ASSISTÊNCIAS</span>
+              <i class="menu-arrow"></i> 
             </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../admin/assistencia.php">Registrar</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../admin/verassistencia.php">Visualizar</a></li>
+              </ul>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link <?php if($err_profile == true) { echo'disabled text-danger';}?>" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
