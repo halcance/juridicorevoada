@@ -20,8 +20,8 @@ include('includes/head.php');
         <div class="col-lg-12">
           <div class="breadcrumb_iner text-center">
             <div class="breadcrumb_iner_item">
-              <h2>Regimento Interno</h2>
-              <p><span>O regimento interno visa garantir a ordem, eficiência e bom funcionamento da instituição, assegurando que todos os envolvidos sigam um conjunto de diretrizes comuns. Por meio dessas regras, busca-se promover a disciplina, a transparência e a igualdade de condições entre os membros.</span></p>
+              <h2>Contact Us</h2>
+              <p>home <span>//</span>Contact Us</p>
             </div>
           </div>
         </div>
@@ -34,7 +34,45 @@ include('includes/head.php');
   <section class="contact-section section_padding">
     <div class="container">
       <div class="d-none d-sm-block mb-5 pb-4">
-        <p>Com o objetivo de conduzir, delimitar e organizar a execução da profissão judiciária, balizado em princípios foi elaborado este Código de Ética, que visa orientar as ações do profissional em questão trazendo para o mais próximo de uma equidade justa possível. Dos objetivos tratados, tem-se o de proteger o profissional bem como os usufruintes desse ofício, de esclarecer procedências em determinadas situações e ainda predeterminar penalidades aos não cumprimentos ou violações das normas presentes nesse documento. É dever dos órgãos de fiscalização a divulgação deste documento para fiel observância do exercício da judicatura.</p>
+        <div id="map" style="height: 480px;"></div>
+        <script>
+          function initMap() {
+            var uluru = {
+              lat: -25.363,
+              lng: 131.044
+            };
+            var grayStyles = [{
+                featureType: "all",
+                stylers: [{
+                    saturation: -90
+                  },
+                  {
+                    lightness: 50
+                  }
+                ]
+              },
+              {
+                elementType: 'labels.text.fill',
+                stylers: [{
+                  color: '#ccdee9'
+                }]
+              }
+            ];
+            var map = new google.maps.Map(document.getElementById('map'), {
+              center: {
+                lat: -31.197,
+                lng: 150.744
+              },
+              zoom: 9,
+              styles: grayStyles,
+              scrollwheel: false
+            });
+          }
+        </script>
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap">
+        </script>
+
       </div>
 
 
