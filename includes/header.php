@@ -28,13 +28,10 @@
                                         Documentação
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item disabled" href="blog.php">Regimento Interno</a>
+                                        <a class="dropdown-item" href="regimentointerno.php">Regimento Interno</a>
                                         <a class="dropdown-item disabled" href="single-blog.php">Código Penal</a>
                                         <a class="dropdown-item disabled" href="elements.php">Código Processual</a>
                                     </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.php">Contato</a>
                                 </li>
                             </ul>
                         </div>
