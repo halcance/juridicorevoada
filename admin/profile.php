@@ -69,11 +69,11 @@ $deu_certo = move_uploaded_file($arquivo["tmp_name"], $path);
               $dataform = $data->format('d-m-Y H:i:s');
               $usuario = $_SESSION['username'];
               $mensagem = "O usuário ".$_SESSION['username']." editou seu perfil.";
-              $sql = "INSERT INTO logs(data, mensagem, usuario) VALUES(:data, :mensagem, :usuario)";
+              $sql = "INSERT INTO logs(data, mensagem, user) VALUES(:data, :mensagem, :user)";
               $stmt = $pdo->prepare($sql);
               $stmt->bindParam(":data", $dataform, PDO::PARAM_STR);
               $stmt->bindParam(":mensagem", $mensagem, PDO::PARAM_STR);
-              $stmt->bindParam(":usuario", $usuario, PDO::PARAM_STR);
+              $stmt->bindParam(":user", $usuario, PDO::PARAM_STR);
               $stmt->execute();
               echo '<div class="alert alert-success md" role="alert">
              Perfil editado com sucesso! Recarregando a página em 5 segundos...

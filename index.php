@@ -1,5 +1,16 @@
+<?php
+
+require('config.php');
+
+$page_title = "Início";
+
+// CONSULTA TOTAL DE USUÁRIOS
+$stmt = $pdo->prepare("SELECT * FROM users ORDER BY rank DESC LIMIT 3");
+$stmt->execute();
+
+?>
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 <?php include('includes/head.php') ?>
 
 <body>
@@ -40,23 +51,19 @@
             <div class="row">
                 <div class="col-lg-7 col-sm-7">
                     <div class="about_part_img">
-                        <img src="img/about_1.png" alt="#">
+                        <img src="img/12.png" alt="#">
                     </div>
                 </div>
                 <div class="col-lg-5 col-sm-5 d-none d-sm-block">
                     <div class="about_part_img">
-                        <img src="img/about_2.png" alt="#">
+                        <img src="img/15.png" alt="#">
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="about_text text-center">
-                        <p>Fly seed a it hath own light deep our meat land bearing won bring you two
-                            were together divide set kind stars firmament evning from forth seas let
-                            air whales which of gathering be sixth. Seed won't. Creature she'd living
-                            said blessed. Rule plac also seasons was itself of for days subdue
-                            great own male itsel</p>
+                        <p>O Sistema Jurídico do RevoadaRJ busca manter a paz social e a defesa dos direitos de todos os cidadãos por meio da Ordem dos Advogados onde localiza-se nossos advogados e o nosso tribunal de justiça onde julga-se processos civis e criminais.</p>
                     </div>
                 </div>
             </div>
@@ -72,8 +79,8 @@
                     <div class="single_service_part">
                         <div class="single_service_text">
                             <span class="flaticon-law"></span>
-                            <h2>Get Law Advice</h2>
-                            <p>Over their the abund every placed thing them them winged you beginning forth</p>
+                            <h2>CARTÓRIO</h2>
+                            <p>O cartório é seu parceiro confiável para todos os seus documentos legais. Realizamos a emissão de todos os documentos civis.</p>
                         </div>
                     </div>
                 </div>
@@ -81,8 +88,8 @@
                     <div class="single_service_part">
                         <div class="single_service_text">
                             <span class="flaticon-scale"></span>
-                            <h2>Review The Case</h2>
-                            <p>Over their the abund every placed thing them them winged you beginning forth</p>
+                            <h2>REVISÃO DE CASOS</h2>
+                            <p>Reveja decisões tomadas por outras instituições/organizações e garanta a justiça e a preservação dos direitos.</p>
                         </div>
                     </div>
                 </div>
@@ -90,8 +97,8 @@
                     <div class="single_service_part">
                         <div class="single_service_text">
                             <span class="flaticon-siren"></span>
-                            <h2>Winning Guarantee</h2>
-                            <p>Over their the abund every placed thing them them winged you beginning forth</p>
+                            <h2>DENÚNCIAS</h2>
+                            <p>Não se sente seguro em denunciar algo ou alguém diretamente? Faça sua denúncia no jurídico e iremos apurar os fatos.</p>
                         </div>
                     </div>
                 </div>
@@ -99,8 +106,8 @@
                     <div class="single_service_part">
                         <div class="single_service_text">
                             <span class="flaticon-policeman"></span>
-                            <h2>Fully Suppport</h2>
-                            <p>Over their the abund every placed thing them them winged you beginning forth</p>
+                            <h2>ASSISTÊNCIA JURÍDICA</h2>
+                            <p>Oferecemos assistência jurídica garantindo proteção legal em todas as etapas. Conte com nossa experiência para resolver seus desafios legais com eficiência e confiança.</p>
                         </div>
                     </div>
                 </div>
@@ -115,9 +122,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-5 col-sm-10">
                     <div class="section_tittle">
-                        <h2>Recent Case Study</h2>
-                        <p>Over their the abundantly every midst place thing them them winged you're
-                            beginning forth you. Fruit seas very does can after herb moved so was Kind </p>
+                        <h2>Administração Pública</h2>
+                        <p>Nossos princípios incluem eficiência, transparência, legalidade e responsabilidade na utilização dos recursos públicos. Engloba planejamento, organização, direção e controle das atividades do setor público, com o objetivo de promover o bem-estar social e o desenvolvimento sustentável da cidade. </p>
                     </div>
                 </div>
             </div>
@@ -125,7 +131,18 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_offer_part">
                         <div class="single_offer">
-                            <img src="img/offer_img_1.png" alt="offer_img_1">
+                            <img src="img/18.png" alt="offer_img_1">
+                            <div class="hover_text">
+                                <h2>Defesa Civil</h2>
+                                <p>Instituição autônoma e independente que atua na defesa da ordem jurídica, dos interesses sociais e individuais indisponíveis, promovendo a investigação e a responsabilização de infratores, além de fiscalizar a aplicação da lei e zelar pelo cumprimento dos direitos fundamentais.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_offer_part">
+                        <div class="single_offer">
+                            <img src="img/oab1.png" alt="offer_img_1">
                             <div class="hover_text">
                                 <h2>RBanking & Finance</h2>
                                 <p>Bank Protected</p>
@@ -136,18 +153,7 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_offer_part">
                         <div class="single_offer">
-                            <img src="img/offer_img_2.png" alt="offer_img_1">
-                            <div class="hover_text">
-                                <h2>RBanking & Finance</h2>
-                                <p>Bank Protected</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single_offer_part">
-                        <div class="single_offer">
-                            <img src="img/offer_img_3.png" alt="offer_img_1">
+                            <img src="img/14.png" alt="offer_img_1">
                             <div class="hover_text">
                                 <h2>RBanking & Finance</h2>
                                 <p>Bank Protected</p>
@@ -166,72 +172,30 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7 col-sm-10">
                     <div class="section_tittle">
-                        <h2>Meet Our Attorneys</h2>
-                        <p>Over their the abundantly every midst place thing them them winged you're
-                            beginning forth you. Fruit seas very does can after herb moved so was Kind </p>
+                        <h2>Conheça nossa Administração</h2>
+                        <p>A administração é responsável por planejar, organizar, dirigir e controlar os recursos. Isso envolve tomar decisões estratégicas, alocação eficiente de recursos, liderança de equipes e avaliação de desempenho para garantir o sucesso e a sustentabilidade.</p>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-between">
+               <?php while($dados = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_offer_part">
                         <div class="single_offer">
-                            <img src="img/team/team_member_1.png" alt="offer_img_1">
+                            <img src="../admin/<?php echo $dados['image'] ?>" alt="offer_img_1">
                             <div class="hover_text">
-                                <p>jevenmartyn@ariclaw.com</p>
-                                <div class="team_social_icon">
-                                    <a href="#"> <span class="ti-twitter"></span> </a>
-                                    <a href="#"> <span class="ti-skype"></span> </a>
-                                    <a href="#"> <span class="ti-instagram"></span> </a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="team_member_info">
-                            <h4>Stephen Hockin</h4>
-                            <p>Crime Lawyer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single_offer_part">
-                        <div class="single_offer">
-                            <img src="img/team/team_member_2.png" alt="offer_img_1">
-                            <div class="hover_text">
-                                <p>jevenmartyn@ariclaw.com</p>
-                                <div class="team_social_icon">
-                                    <a href="#"> <span class="ti-twitter"></span> </a>
-                                    <a href="#"> <span class="ti-skype"></span> </a>
-                                    <a href="#"> <span class="ti-instagram"></span> </a>
-                                </div>
+                                <p>PASSAPORTE: <?php echo $dados['passport'] ?></p>
+                                <p>RG: <?php echo $dados['rg'] ?></p>
+                                <p>CADASTRO: <?php echo $dados['created'] ?></p>
                             </div>
                         </div>
                         <div class="team_member_info">
-                            <h4>Jeven Martyn</h4>
-                            <p>Finance Lawyer</p>
+                            <h4><?php echo $dados['name'] ?></h4>
+                            <p><?php echo $dados['role'] ?></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single_offer_part">
-                        <div class="single_offer">
-                            <img src="img/team/team_member_3.png" alt="offer_img_1">
-                            <div class="hover_text">
-                                <p>jevenmartyn@ariclaw.com</p>
-                                <div class="team_social_icon">
-                                    <a href="#"> <span class="ti-twitter"></span> </a>
-                                    <a href="#"> <span class="ti-skype"></span> </a>
-                                    <a href="#"> <span class="ti-instagram"></span> </a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="team_member_info">
-                            <h4>Donald Tisar</h4>
-                            <p>Crime Lawyer</p>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
         </div>
     </section>

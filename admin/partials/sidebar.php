@@ -1,11 +1,11 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.php">
+            <a class="nav-link" href="../admin/index.php">
               <i class="menu-icon mdi mdi-home"></i>
               <span class="menu-title">Início</span>
             </a>
-          </li>
+            </li>
           <li class="nav-item nav-category">SERVIÇOS</li>
           <li class="nav-item">
             <a class="nav-link  <?php if($err_profile == true) { echo'disabled text-danger';}?>" href="../admin/assistencia.php">
@@ -21,7 +21,9 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
+              <?php if($uss_rank >= 3)  {?>
                 <li class="nav-item"> <a class="nav-link" href="../admin/cadfam.php">Cadastrar</a></li>
+                <?php }?>
                 <li class="nav-item"> <a class="nav-link" href="../admin/gercras.php">Gerenciar</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../admin/craspend.php">Pendências</a></li>
               </ul>
@@ -56,10 +58,18 @@
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="../admin/admuser.php"> Gerenciar </a></li>
+                <?php if($uss_rank >= 4)  {?>
                 <li class="nav-item"> <a class="nav-link" href="../admin/edituser.php"> Editar </a></li>
                 <li class="nav-item"> <a class="nav-link" href="../admin/admcna.php"> CNA </a></li>
+                <?php }?>
               </ul>
             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  <?php if($err_profile == true) { echo'disabled text-danger';}?>" href="../admin/admlog.php">
+              <i class="menu-icon mdi mdi-alphabetical"></i>
+              <span class="menu-title">LOGS</span>
+            </a>
           </li>
           <?php }?>
           <li class="nav-item nav-category">DOCUMENTAÇÃO</li>

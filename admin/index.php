@@ -5,10 +5,18 @@ include('../includes/verificacao.php');
 
 $page_title = "Administração";
 
+// CONSULTA TOTAL DE USUÁRIOS
 $stmt = $pdo->prepare("SELECT id FROM users");
 $stmt->execute();
 $mtotal = $stmt->rowCount();
-
+// CONSULTA SE HÁ PENDENCIA DE FAMÍLIA
+$ctmt = $pdo->prepare("SELECT id FROM cras");
+$ctmt->execute();
+$ctotal = $ctmt->rowCount();
+// CONSULTA CNA ATIVA
+$cntmt = $pdo->prepare("SELECT id FROM cna WHERE status='REGULAR'");
+$cntmt->execute();
+$cntotal = $cntmt->rowCount();
 ?>
 
 <!DOCTYPE html>
@@ -70,13 +78,13 @@ $mtotal = $stmt->rowCount();
                             <p class="text-success d-flex"><i class="mdi mdi-menu-up"></i><span>+0.1%</span></p>
                           </div>
                           <div>
-                            <p class="statistics-title">Page Views</p>
-                            <h3 class="rate-percentage">7,682</h3>
-                            <p class="text-success d-flex"><i class="mdi mdi-menu-up"></i><span>+0.1%</span></p>
+                            <p class="statistics-title">FAMÍLIAS CADASTRADAS</p>
+                            <h3 class="rate-percentage"><?php echo $ctotal; ?></h3>
+                            <p class="text-success d-flex"><i class="mdi mdi-menu-up"></i><span>+0.3%</span></p>
                           </div>
                           <div>
-                            <p class="statistics-title">New Sessions</p>
-                            <h3 class="rate-percentage">68.8</h3>
+                            <p class="statistics-title">CNA REGULAR</p>
+                            <h3 class="rate-percentage"><?php echo $cntotal; ?></h3>
                             <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
                           </div>
                           <div class="d-none d-md-block">

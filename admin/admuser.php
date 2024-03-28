@@ -24,11 +24,11 @@ if(isset($_GET['active'])){
     if($edit->execute()){
         $usuario = $_SESSION['username'];
               $mensagem = "O usuário ".$_SESSION['username']." ATIVOU o usuário ".$id;
-              $sql = "INSERT INTO logs(data, mensagem, usuario) VALUES(:data, :mensagem, :usuario)";
+              $sql = "INSERT INTO logs(data, mensagem, user) VALUES(:data, :mensagem, :user)";
               $stmt = $pdo->prepare($sql);
               $stmt->bindParam(":data", $dataform, PDO::PARAM_STR);
               $stmt->bindParam(":mensagem", $mensagem, PDO::PARAM_STR);
-              $stmt->bindParam(":usuario", $usuario, PDO::PARAM_STR);
+              $stmt->bindParam(":user", $usuario, PDO::PARAM_STR);
               $stmt->execute();
             // CRIAR NOVO WEBHOOK COM NOVOS PARAMETROS OU ALTERAR O EXISTENTE
             //include_once("../cna/cnaoab.php");

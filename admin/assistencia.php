@@ -61,7 +61,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                   <div class="col-md-6">
                           <label class="col-md-6 col-form-label">NOME DO CLIENTE</label>
                           <div class="col-md-6">
-                          <input type="text" class="form-control mb-2 mr-sm-2" name="cliente" id="inlineFormInputName2" placeholder="12">
+                          <input type="text" class="form-control mb-2 mr-sm-2" name="cliente" id="inlineFormInputName2" placeholder="Erick Collins">
                           </div>
                       </div>
                       <div class="col-md-6">
