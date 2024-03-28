@@ -15,9 +15,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="index.php">Início</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.php">Sobre</a>
-                                </li>
+                                
                                 <li class="nav-item">
                                     <a class="nav-link" href="service.php">Serviços</a>
                                 </li>
