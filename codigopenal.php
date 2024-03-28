@@ -59,7 +59,7 @@ include('includes/head.php');
               <li>II - detenção.</li>
             </ul>
             <br>
-            <p>§ 2º - Restritivas de direitos;</p>
+            <p>§ 2º - Restritivas de direitos; </p>
           <ul>
               <li>I - prestação pecuniária.</li>
               <li>II - perda de bens e valores.</li>
