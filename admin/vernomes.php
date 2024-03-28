@@ -5,7 +5,7 @@ include('../includes/verificacao.php');
 
 $page_title = "LOGS";
 
-$stmt = $pdo->prepare("SELECT * FROM atendimentos ORDER BY id DESC");
+$stmt = $pdo->prepare("SELECT * FROM nomes ORDER BY id DESC");
 $stmt->execute();
 $total = $stmt->rowCount();
 
@@ -32,7 +32,7 @@ $total = $stmt->rowCount();
                       <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title"><code><?php echo $total; ?></code> assistências encontradas</h4>
+                  <h4 class="card-title"><code><?php echo $total; ?></code> mudanças de nomes.</h4>
                   <div class="table-responsive">
                     <table class="table table-bordered">
                       <thead>
@@ -41,13 +41,13 @@ $total = $stmt->rowCount();
                             DATA
                           </th>
                           <th>
-                            CLIENTE
+                           PASSAPORTE
                           </th>
                           <th>
-                            PASSAPORTE
+                            NOVO NOME
                           </th>
                           <th>
-                            RELATÓRIO
+                           NOME ANTIGO
                           </th>
                           <th>
                             USUÁRIO
@@ -63,13 +63,13 @@ $total = $stmt->rowCount();
                           <?php echo $dados["data"]; ?>
                           </td>
                           <td>
-                          <?php echo $dados["cliente"]; ?>
+                          <?php echo $dados["idu"]; ?>
                           </td>
                           <td>
-                          <?php echo $dados["pass"]; ?>
+                          <?php echo $dados["new"]; ?>
                           </td>
                           <td>
-                          <?php echo $dados["relatorio"]; ?>
+                          <?php echo $dados["old"]; ?>
                           </td>
                           <td>
                           <?php echo $dados["user"]; ?>

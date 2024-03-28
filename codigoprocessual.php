@@ -20,7 +20,7 @@ include('includes/head.php');
         <div class="col-lg-12">
           <div class="breadcrumb_iner text-center">
             <div class="breadcrumb_iner_item">
-            <h2>Código Penal</h2>
+            <h2>Código Processual</h2>
               <p><span>O código processual é um conjunto de normas que regulam o processo judicial, estabelecendo os procedimentos e regras a serem seguidas pelas partes envolvidas em um litígio perante o Judiciário. Ele define as etapas que devem ser cumpridas desde o início do processo até o seu encerramento, determinando prazos, competências, recursos e formas de atuação das partes e do juiz.</span></p>
             </div>
           </div>
@@ -43,7 +43,7 @@ include('includes/head.php');
           <h2 class="contact-title">Capítulo I - DO INQUÉRITO POLICIAL</h2>
           <br>
           <br>
-          <p>⚖️ <strong>Art. 1</strong> Não é permitido ingressar no Poder Judiciário estando com ficha criminal na polícia.</p>
+          <p>⚖️ <strong>Art. 1</strong> O processo penal reger-se-á, por este Código.</p>
           <br>
           <p>⚖️ <strong>Art. 2</strong> É vedado o desvio de recursos material ou imaterial pertencentes ao poder judiciário. O desvio se aplica também a utilização de bens em sua posse para uso pessoal.</p>
           <br>
@@ -68,7 +68,7 @@ include('includes/head.php');
                 <li>III - as atividades de documentação e registros públicos.</li>
             </ul>
             <br>
-            <p>⚖️ <strong>Art. 8</strong> O advogado, em primeira instância, além de ser defensor do estado democrático, é indispensável para a administração da justiça, o mesmo ainda se faz presente preservador da paz social. Por tanto são deveres do mesmo:
+            <p>⚖️ <strong>Art.</strong> O advogado, em primeira instância, além de ser defensor do estado democrático, é indispensável para a administração da justiça, o mesmo ainda se faz presente preservador da paz social. Por tanto são deveres do mesmo:
 
             </p>
             <br>
