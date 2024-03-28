@@ -20,8 +20,8 @@ include('includes/head.php');
         <div class="col-lg-12">
           <div class="breadcrumb_iner text-center">
             <div class="breadcrumb_iner_item">
-              <h2>Contact Us</h2>
-              <p>home <span>//</span>Contact Us</p>
+            <h2>Regimento Interno</h2>
+              <p><span>O regimento interno visa garantir a ordem, eficiência e bom funcionamento da instituição, assegurando que todos os envolvidos sigam um conjunto de diretrizes comuns. Por meio dessas regras, busca-se promover a disciplina, a transparência e a igualdade de condições entre os membros.</span></p>
             </div>
           </div>
         </div>
