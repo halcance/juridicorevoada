@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <?php include('includes/head.php') ?>
 
@@ -15,8 +15,8 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb_iner text-center">
                         <div class="breadcrumb_iner_item">
-                            <h2>Our Service</h2>
-                            <p>home <span>//</span>Service</p>
+                            <h2>Serviços</h2>
+                            <p><span>//</span></p>
                         </div>
                     </div>
                 </div>

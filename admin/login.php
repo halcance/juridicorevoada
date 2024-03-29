@@ -1,4 +1,7 @@
 <?php
+
+$page_title = "Login";
+
 // Inicialize a sessão
 session_start();
  
@@ -90,28 +93,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
-  <!-- plugins:css -->
-  <link rel="stylesheet" href="../admin/vendors/feather/feather.css">
-  <link rel="stylesheet" href="../admin/vendors/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="../admin/vendors/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" href="../admin/vendors/typicons/typicons.css">
-  <link rel="stylesheet" href="../admin/vendors/simple-line-icons/css/simple-line-icons.css">
-  <link rel="stylesheet" href="../admin/vendors/css/vendor.bundle.base.css">
-  <!-- endinject -->
-  <!-- Plugin css for this page -->
-  <!-- End plugin css for this page -->
-  <!-- inject:css -->
-  <link rel="stylesheet" href="../admin/css/vertical-layout-light/style.css">
-  <!-- endinject -->
-  <link rel="shortcut icon" href="../admin/images/favicon.png" />
-</head>
-
+<?php include("partials/head.php"); ?>
 <body>
   <div class="container-scroller">
     <div class="container-fluid page-body-wrapper full-page-wrapper">

@@ -28,7 +28,7 @@ $stmt->execute();
                             <h1>TRIBUNAL DE JUSTIÇA</h1>
                             <p>A função do Poder Judiciário é garantir os direitos individuais, coletivos e sociais e resolver conflitos entre cidadãos, entidades e Estado.</p>
                             <div class="banner_btn">
-                                <a href="/team.php" class="btn_1">Membros</a>
+                                <a href="/membros.php" class="btn_1">Membros</a>
                             </div>
                         </div>
                     </div>
@@ -134,7 +134,7 @@ $stmt->execute();
                             <img src="img/18.png" alt="offer_img_1">
                             <div class="hover_text">
                                 <h2>Defesa Civil</h2>
-                                <p>Instituição autônoma e independente que atua na defesa da ordem jurídica, dos interesses sociais e individuais indisponíveis, promovendo a investigação e a responsabilização de infratores, além de fiscalizar a aplicação da lei e zelar pelo cumprimento dos direitos fundamentais.</p>
+                                <p>Instituição que atua na defesa da ordem jurídica, dos interesses sociais e individuais indisponíveis, promovendo a investigação e a responsabilização de infratores, além de fiscalizar a aplicação da lei e zelar pelo cumprimento dos direitos fundamentais.</p>
                             </div>
                         </div>
                     </div>
@@ -144,8 +144,8 @@ $stmt->execute();
                         <div class="single_offer">
                             <img src="img/oab1.png" alt="offer_img_1">
                             <div class="hover_text">
-                                <h2>RBanking & Finance</h2>
-                                <p>Bank Protected</p>
+                                <h2>Corpo Jurídico</h2>
+                                <p>Dentro do nosso painel de membros do corpo jurídicos contamos com pessoas capacitadas e competentes atuando em todas as áreas administrativas.</p>
                             </div>
                         </div>
                     </div>
@@ -155,8 +155,8 @@ $stmt->execute();
                         <div class="single_offer">
                             <img src="img/14.png" alt="offer_img_1">
                             <div class="hover_text">
-                                <h2>RBanking & Finance</h2>
-                                <p>Bank Protected</p>
+                                <h2>Resolução de Conflitos</h2>
+                                <p>Resolva conflitos de forma eficaz e harmoniosa com nossos serviços especializados em mediação e negociação. Libere o potencial de sua equipe e promova um ambiente de trabalho produtivo e positivo.</p>
                             </div>
                         </div>
                     </div>
@@ -207,9 +207,8 @@ $stmt->execute();
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="cta_text">
-                        <h2>Their was of wherein darkness tree them own it firmament
-                            fourth you whose void grass gree</h2>
-                        <a href="#" class="cta_btn">Request Free Consultation</a>
+                        <h2>A Câmara Municipal do RevoadaRJ está disponível para atender suas solicitações e demandas, nossos vereadores estão de prontidão para atendimentos</h2>
+                        <a href="https://discord.gg/htPzUBfAtM" class="cta_btn">Discord da Câmara Municipal</a>
                     </div>
                 </div>
             </div>
@@ -226,23 +225,15 @@ $stmt->execute();
                     <div class="slider">
                         <div data-index="1">
                             <div class="client_review_text text-center">
-                                <p>Thing yielding place gathered heaven second isn't darkness does not good very dry
-                                    morning signs
-                                    isn't for spirit stars man meat beginning. Meat earth. Face seas doesn't life
-                                    doesn't fruit
-                                    brought life gathering also lights isn't day a wherein firmament fruitful read
-                                    ability</p>
+                                <p>"O trabalho da Ordem dos Advogados tem sido exemplar,
+                                     demonstrando compromisso inabalável com a justiça e excelência na defesa dos direitos dos cidadãos."</p>
 
                             </div>
                         </div>
                         <div data-index="2">
                             <div class="client_review_text text-center">
-                                <p>Thing yielding place gathered heaven second isn't darkness does not good very dry
-                                    morning
-                                    signs isn't for spirit stars man meat beginning. Meat earth. Face seas doesn't life
-                                    doesn't
-                                    fruit brought life gathering also lights isn't day a wherein firmament fruitful read
-                                    ability</p>
+                                <p>"A resolução de conflitos conduzida pelo tribunal foi excepcional, demonstrando profissionalismo, imparcialidade e garantindo justiça para todas as partes envolvidas. 
+                                    Estamos gratos pela eficiência e competência demonstradas durante todo o processo."</p>
                             </div>
                         </div>
                         <div data-index="3">
@@ -269,10 +260,10 @@ $stmt->execute();
                     <!-- THUMBNAILS -->
                     <div class="slider-nav-thumbnails">
                         <div class="slider-thumbnails">
-                            <img src="img/client/client_1.png" alt="slideimg" class="image">
+                            <img src="img/client/18225_1.png" alt="slideimg" class="image">
                             <div class="client_review_text text-center">
-                                <h3>Daniel E Gilcritst</h3>
-                                <h5>Richard Kellerman</h5>
+                                <h3>Andreza Vallence</h3>
+                                <h5>Diretora da OAB</h5>
                             </div>
                         </div>
                         <div class="slider-thumbnails">

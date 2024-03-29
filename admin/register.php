@@ -1,4 +1,7 @@
 <?php
+
+$page_title = "Registrar-se";
+
 // Incluir arquivo de configuração
 require_once "../config.php";
  

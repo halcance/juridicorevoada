@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 
 <?php 
-$page_title = "Regimento Interno";
+$page_title = "Código Processual";
 include('includes/head.php');
 
 ?>
@@ -20,7 +20,7 @@ include('includes/head.php');
         <div class="col-lg-12">
           <div class="breadcrumb_iner text-center">
             <div class="breadcrumb_iner_item">
-            <h2>Código Penal</h2>
+            <h2>Código Processual</h2>
               <p><span>O código processual é um conjunto de normas que regulam o processo judicial, estabelecendo os procedimentos e regras a serem seguidas pelas partes envolvidas em um litígio perante o Judiciário. Ele define as etapas que devem ser cumpridas desde o início do processo até o seu encerramento, determinando prazos, competências, recursos e formas de atuação das partes e do juiz.</span></p>
             </div>
           </div>
@@ -34,7 +34,7 @@ include('includes/head.php');
   <section class="contact-section section_padding">
     <div class="container">
       <div class="d-none d-sm-block mb-5 pb-4">
-  <p>Com o objetivo de conduzir, delimitar e organizar a execução da profissão judiciária, balizado em princípios foi elaborado este Código de Ética, que visa orientar as ações do profissional em questão trazendo para o mais próximo de uma equidade justa possível. Dos objetivos tratados, tem-se o de proteger o profissional bem como os usufruintes desse ofício, de esclarecer procedências em determinadas situações e ainda predeterminar penalidades aos não cumprimentos ou violações das normas presentes nesse documento. É dever dos órgãos de fiscalização a divulgação deste documento para fiel observância do exercício da judicatura.</p>
+  <p></p>
       </div>
 
 
@@ -43,224 +43,228 @@ include('includes/head.php');
           <h2 class="contact-title">Capítulo I - DO INQUÉRITO POLICIAL</h2>
           <br>
           <br>
-          <p>⚖️ <strong>Art. 1</strong> Não é permitido ingressar no Poder Judiciário estando com ficha criminal na polícia.</p>
+          <p>⚖️ <strong>Art. 1</strong> O processo penal reger-se-á, por este Código.</p>
           <br>
-          <p>⚖️ <strong>Art. 2</strong> É vedado o desvio de recursos material ou imaterial pertencentes ao poder judiciário. O desvio se aplica também a utilização de bens em sua posse para uso pessoal.</p>
+          <p>⚖️ <strong>Art. 2</strong> 2 O inquérito será iniciado por:</p>
           <br>
-          <p>⚖️ <strong>Art. 3</strong> Todas as alterações e aplicações devem ser postadas no diário respectivo para fins de conhecimento público. Quaisquer alterações só são válidas após publicação no diário oficial.</p>
+          <ul>
+              <li>I -  ofício da polícia;</li>
+              <li>II - mediante requisição da autoridade judiciária.</li>
+            </ul>
+            <br>
+          <p>⚖️ <strong>Art. 3</strong> Qualquer pessoa que tiver conhecimento da existência de infração penal, poderá comunicá-la à autoridade policial, e esta, verificada a procedência das informações, mandará instaurar inquérito.</p>
           <br>
-          <p>⚖️ <strong>Art. 4</strong> É proibido o vazamento de informações sigilosas, especialmente processos que ocorrem em segredo de justiça.</p>
+          <p>⚖️ <strong>Art. 4</strong> Logo que tiver conhecimento da prática da infração penal, a autoridade policial deverá:</p>
           <br>
-          <p>⚖️ <strong>Art. 5</strong> É vedada a postulação de processos a desfavor da Prefeitura.</p>
+          <ul>
+              <li>I -  dirigir-se ao local, providenciando para que não se alterem o estado e conservação das coisas;</li>
+              <li>II - apreender os objetos que tiverem relação com o fato;</li>
+              <li>III -  colher todas as provas que servirem para o esclarecimento do fato e suas circunstâncias;</li>
+              <li>IV -   ouvir o ofendido;</li>
+              <li>V -  ouvir o indiciado, com observância;</li>
+              <li>VI -  proceder a reconhecimento de pessoas e coisas e a acareações.</li>
+            </ul>
+            <br>
+          <p>⚖️ <strong>Art. 5</strong> Havendo prisão em flagrante, será observado o disposto no Capítulo VIII.</p>
           <br>
-          <p>⚖️ <strong>Art. 6</strong> Deve-se obedecer a hierarquia interna. Todos aqueles que exercem função jurídica devem colaborar com os órgãos de aferição e controle na execução do seu trabalho.</p>
+          <p>⚖️ <strong>Art. 6</strong> A autoridade fará minucioso relatório do que tiver sido apurado e enviará autos ao juiz competente.</p>
           <br>
         </div>
         <div class="col-12">
           <h2 class="contact-title">Capítulo II - DA AUDIÊNCIA DE INSTRUÇÃO E JULGAMENTO</h2>
           <br>
           <br>
-          <p>⚖️ <strong>Art. 7</strong> As atividades da advocacia são:</p>
+          <p>⚖️ <strong>Art. 7</strong> Quando as partes não chegam a um consenso, o Juiz marcará uma audiência de instrução e julgamento com as partes envolvidas para que o magistrado tome uma decisão para instruir melhor a situação.</p>
+          <br>
+          <p>⚖️ <strong>Art. 8</strong> A audiência será registrada por gravação audiovisual ou em termo escrito e as partes também poderão gravar o ato, independentemente de autorização judicial.</p>
+          <br>
+          <p>⚖️ <strong>Art. 9</strong> No dia e na hora designados, o juiz declarará aberta a audiência de instrução e julgamento e mandará apregoar as partes e os respectivos advogados, bem como outras pessoas que dela devam participar.</p>
+          <br>
+          <p>⚖️ <strong>Art. 10</strong> Instalada a audiência, o juiz tentará conciliar as partes, independentemente do emprego anterior de outros métodos de solução consensual de conflitos, como a mediação e a arbitragem.</p>
+          <br>
+          <p>⚖️ <strong>Art. 11</strong> As provas orais serão produzidas em audiência, ouvindo-se nesta ordem, preferencialmente:</p>
           <br>
           <ul>
-                <li>I - a abertura de processos jurídicos;</li>
-                <li>II - as atividades de consultoria, assessoria e direção jurídicas;</li>
-                <li>III - as atividades de documentação e registros públicos.</li>
+              <li>I -  o perito e os assistentes técnicos, que responderão aos quesitos de esclarecimentos requeridos no prazo, caso não respondidos anteriormente por escrito;</li>
+              <li>II - o autor e, em seguida, o réu, que prestarão depoimentos pessoais;</li>
+              <li>III -  as testemunhas arroladas pelo autor e pelo réu, que serão inquiridas.</li>
+              <li>IV -  Enquanto depuserem o perito, os assistentes técnicos, as partes e as testemunhas, não poderão a acusação ou defesa intervir ou apartear, sem licença do juiz.</li>
+              <li>V -   É vedado a quem ainda não depôs assistir ao interrogatório da outra parte.</li>
             </ul>
             <br>
-            <p>⚖️ <strong>Art. 8</strong> O advogado, em primeira instância, além de ser defensor do estado democrático, é indispensável para a administração da justiça, o mesmo ainda se faz presente preservador da paz social. Por tanto são deveres do mesmo:
-
-            </p>
-            <br>
-            <ul>
-              <li>I -  preservar, de modo profissional, sua conduta, nobreza, ordem e dignidade profissionais no momento em que zelar, essencialmente, pelo seu caráter e indispensabilidade; </li>
-              <li>II - procurar aperfeiçoamento e empenho em sua função;</li>
-              <li>III - contribuir de toda e qualquer forma, para o cumprimento das leis e dos direitos existentes em caso;</li>
-              <li>IV - encorajar uma conversa entre litigantes com a finalidade de resolver quaisquer diferenças e mitigar instauração de novos litígios, além de aconselhar o cliente a não entrar em uma aventura judicial</li>
-
-            </ul>
-            <br>
-            <p>⚖️ <strong>Art. 9</strong> O advogado não deverá aceitar como cliente alguém que já tenha iniciado tal processo com outro advogado, sem antes a informação e interação prévia por parte do cliente, salvo com ordens do juiz.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 10</strong> É direito e dever de um profissional de direito, como sendo advogado, aceitar a defesa criminal, desconsiderando sua opinião pessoal sobre o caso.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 11</strong> O sigilo profissional acontece, independentemente da profissão, deve ser respeitado, salvo quando o profissional advogado receber ameaças e atentados contra a sua vida, sua honra, ou quando o mesmo se ver afrontado pelo próprio cliente, que em defesa pessoal, poderá revelar segredos, considerando a restrição ao interesse da causa.</p>
-            <br>
+          <p>⚖️ <strong>Art. 12</strong> Finda a instrução, o juiz dará a palavra ao advogado do autor e do réu, bem como a acusação, se for o caso de sua intervenção, sucessivamente, pelo prazo de 5 (cinco) minutos para cada um, prorrogável por 5 (cinco) minutos, a critério do juiz.</p>
+          <br>
+          <p>⚖️ <strong>Art. 13</strong> Encerrado o debate ou oferecidas as razões finais, o juiz proferirá sentença em audiência ou no prazo de 3 (três) dias.</p>
+          <br>
         </div>
         <div class="col-12">
           <h2 class="contact-title">Capítulo III - DO HABEAS CORPUS E SEU PROCESSO</h2>
           <br>
           <br>
-          <p>⚖️ <strong>Art. 12</strong> O ingresso na carreira da magistratura inicia-se através de concurso público do tribunal de justiça.</p>
+          <p>⚖️ <strong>Art. 14</strong> Será concedido habeas corpus sempre que alguém sofrer ou se achar na iminência de sofrer violência ou coação ilegal na sua liberdade de ir e vir, salvo nos casos de punição disciplinar.</p>
           <br>
-            <p>⚖️ <strong>Art. 13</strong> São deveres do magistrado:</p>
-            <br>
-            <ul>
-              <li>I -  Cumprir suas funções com serenidade, exatidão e independência;</li>
-              <li>II - determinar as providências necessárias para que os atos processuais se realizem nos prazos legais;</li>
-              <li>III - exercer assídua fiscalização sobre os subordinados, especialmente no que se refere à cobrança de custas e emolumentos, embora não haja reclamação das partes.</li>
-
+          <p>⚖️ <strong>Art. 15</strong> Será considerado coação quando:</p>
+          <br>
+          <ul>
+              <li>I -  quando não houver justa causa;</li>
+              <li>II - quando alguém estiver preso por mais tempo do que determina a lei;</li>
+              <li>III -  quando quem ordenar a coação não tiver competência para fazê-lo;</li>
+              <li>IV -  quando houver cessado o motivo que autorizou a coação;</li>
+              <li>V -  quando não for alguém admitido a prestar fiança, nos casos em que a lei a autoriza;</li>
+              <li>VI -  quando o processo for manifestamente nulo.</li>
             </ul>
             <br>
-            <p>⚖️ <strong>Art. 14</strong> É vedado ao judiciário:</p>
-            <br>
-            <ul>
-              <li>I -  Dar declarações ou manifestações sobre processos pendentes;</li>
-              <li>II - Assumir casos em que seja tratado como réu ou alvo principal.</li>
-            </ul>
-            <br>
-            <p>⚖️ <strong>Art. 15</strong> O Magistrado irá responder por perdas ou danos quando:</p>
-            <br>
-            <ul>
-              <li>I -  prosseguir com fraude no exercício da função;</li>
-              <li>II - recusar, omitir ou retardar sem motivo providência que deva ordenar o ofício, ou o requerimento das partes.</li>
-            </ul>
-            <br>
-            <p>⚖️ <strong>Art. 16</strong> O exercício da magistratura exige conduta compatível com os preceitos deste Código e pelos princípios da independência, da imparcialidade, do conhecimento e capacitação, da cortesia, da transparência, do segredo profissional, da prudência, da diligência, da integridade profissional e pessoal, da dignidade, da honra e do decoro.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 17</strong> A atividade judicial deve desenvolver-se de modo a garantir e fomentar a dignidade da pessoa humana, objetivando assegurar e promover a solidariedade e a justiça na relação entre as pessoas.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 18</strong> Exige-se do magistrado que seja eticamente independente e que não interfira, de qualquer modo, na atuação jurisdicional de outro colega, exceto em respeito às normas legais.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 19</strong> Impõe-se ao magistrado pautar-se no desempenho de suas atividades sem receber indevidas influências externas e estranhas à justa convicção que deve formar para a solução dos casos que lhe sejam submetidos.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 20</strong>  O magistrado imparcial é aquele que busca nas provas a verdade dos fatos, com objetividade e fundamento, mantendo ao longo de todo o processo uma distância equivalente das partes, e evita todo o tipo de comportamento que possa refletir favoritismo, predisposição ou preconceito.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 21</strong> Não se considera tratamento discriminatório injustificado:</p>
-            <br>
-            <ul>
-              <li>I -  a audiência concedida a apenas uma das partes ou seu advogado, contanto que se assegure igual direito à parte contrária, caso seja solicitado;</li>
-              <li>II - o tratamento diferenciado resultante de lei.</li>
-            </ul>
-            <br>
-            <p>⚖️ <strong>Art. 22</strong> A atuação do magistrado deve ser transparente, documentando-se seus atos, sempre que possível, mesmo quando não legalmente previsto, de modo a favorecer sua publicidade, exceto nos casos de sigilo contemplado em lei.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 23</strong> O magistrado, obedecido o segredo de justiça, tem o dever de informar ou mandar informar aos interessados acerca dos processos sob sua responsabilidade, de forma útil, compreensível e clara.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 24</strong> É dever do magistrado recusar benefícios ou vantagens de ente público, de empresa privada ou de pessoa física que possam comprometer sua independência funcional.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 25</strong> O magistrado deve manter atitude aberta e paciente para receber argumentos ou críticas lançados de forma cortês e respeitosa, podendo confirmar ou retificar posições anteriormente assumidas nos processos em que atua.</p>
-            <br>
-
+          <p>⚖️ <strong>Art. 16</strong> Ordenada a soltura do paciente em virtude de habeas corpus, será condenada nas custas a autoridade que, por má-fé ou evidente abuso de poder, tiver determinado a coação.</p>
+          <br>
         </div>
         <div class="col-12">
           <h2 class="contact-title">Capítulo IV - DA BUSCA E DA APREENSÃO</h2>
           <br>
           <br>
-            <p>⚖️ <strong>Art. 26</strong> O Tribunal de Justiça é constituído da seguinte forma hierárquica:</p>
+          <p>⚖️ <strong>Art. 17</strong> A busca será domiciliar ou pessoal.</p>
+          <br>
+          <p>⚖️ <strong>Art. 18</strong> Proceder à busca domiciliar, quando fundadas razões a autorizarem, para:</p>
+          <br>
+          <ul>
+              <li>I - prender criminosos;</li>
+              <li>II - apreender coisas achadas ou obtidas por meios criminosos;</li>
+              <li>III -  apreender instrumentos de falsificação ou de contrafação e objetos falsificados ou contrafeitos;</li>
+              <li>IV -  apreender armas e munições, instrumentos utilizados na prática de crime ou destinados a fim delituoso;</li>
+              <li>V -  descobrir objetos necessários à prova de infração ou à defesa do réu;</li>
+              <li>VI -  apreender cartas, abertas ou não, destinadas ao acusado ou em seu poder, quando haja suspeita de que o conhecimento do seu conteúdo possa ser útil à elucidação do fato;</li>
+              <li>VII -  apreender pessoas vítimas de crimes;</li>
+              <li>VIII -  colher qualquer elemento de convicção.</li>
+            </ul>
             <br>
-            <P>Desembargador</p>
-
-            <P>Juiz de Direiro</p>
-
-            <P>Diretor</p>
-
-            <P>Conselheiro</p>
-
-            <P>Advogado Master</p>
-
-            <P>Advogado Sênior</p>
-
-            <P>Advogado Pleno</p>
-
-            <P>Advogado Júnior</p>
-
-            <P>Defensor Público</p>
-
-            <P>Estagiário</p>
-
-            <br>
-            <p>⚖️ <strong>Art. 27</strong> Funções de cada cargo:</p>
-            <br>
-            
-            <p>Desembargador: despacho de sentenças em 2º instância, supervisão, observância das leis.</p>
-            <p>Juiz de Direito: expedição de documentos, despacho de sentenças em 1º instância, supervisão da advocacia.</p>
-            <p>Diretoria: gestão de pessoas, supervisão da comissão de exame de ordem.</p>
-            <p>Conselho: consulta, atendimento, expedição de documentos, supervisão de advogados, aplicação de concursos, aplicação de cursos, admissão.</p>
-            <p>Advogado: realização de consulta, atendimento, expedição de documentos.</p>
-            <p>Estagiário: auxiliar os demais membros do judiciário na consultoria através de acompanhamento, postagem de relatório entre outros serviços solicitados pelos mesmos.</p>
-            <br>
-            <p>⚖️ <strong>Art. 28</strong> Advogado Júnior não poderá assumir processos sozinhos, sendo obrigatório o acompanhamento por um Advogado Sênior, salvo casos com autorização do Conselho.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 29</strong> Só poderá ter organizações como cliente os que estiverem no cargo de Advogado Sênior ou acima.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 30</strong> Aqueles que trabalham no judiciário devem exercer de forma independente, não podendo possuir outro vínculo empregatício. Exceto Defensor Público, pois há autorização do conselho e direção</p>
-            <br>
-        </div>
+          <p>⚖️ <strong>Art. 19</strong> Proceder à busca pessoal quando houver fundada suspeita de que alguém oculte consigo arma proibida ou objetos mencionados nos incisos II a VI e inciso VIII do parágrafo anterior.</p>
+          <br>
+          <p>⚖️ <strong>Art. 20</strong> Quando a própria autoridade policial ou judiciária não a realizar pessoalmente, a busca domiciliar deverá ser precedida da expedição de mandado.</p>
+          <br>
+          <p>⚖️ <strong>Art. 21</strong> A busca poderá ser determinada de ofício ou a requerimento de qualquer das partes.</p>
+          <br>
+          <p>⚖️ <strong>Art. 22</strong> A busca pessoal independerá de mandado, no caso de prisão ou quando houver fundada suspeita de que a pessoa esteja na posse de arma proibida ou de objetos ou papéis que constituam corpo de delito, ou quando a medida for determinada no curso de busca domiciliar.</p>
+          <br>
+          <p>⚖️ <strong>Art. 23</strong> As buscas domiciliares serão executadas de dia ou noite, e, antes de penetrarem na casa, os executores mostrarão e lerão o mandado ao morador, ou a quem o represente, intimando-o, em seguida, a abrir a porta.</p>
+          <br>
+          <p>⚖️ <strong>Art. 24</strong> Em caso de desobediência, será arrombada a porta e forçada a entrada.</p>
+          <br>
+          <p>⚖️ <strong>Art. 25</strong> Descoberta a pessoa ou coisa que se procura, será imediatamente apreendida e posta sob custódia da autoridade ou de seus agentes.</p>
+          <br>
+          <p>⚖️ <strong>Art. 26</strong> A busca em mulher será feita por outra mulher, sem importar retardamento ou prejuízo da diligência.Caso não exista a possibilidade de uma oficial feminina, será procedida pela autoridade presente com a utilização do método caixa.</p>
+          <br>
+          <p>⚖️ <strong>Art. 27</strong> Em casa habitada, a busca será feita de modo que não moleste os moradores mais do que o indispensável para o êxito da diligência.</p>
+          <br>
+          
         <div class="col-12">
           <h2 class="contact-title">Capítulo V - DO JUIZ</h2>
           <br>
           <br>
-            <p>⚖️ <strong>Art.31</strong> Durante o exercício da função é obrigatório a utilização de roupas sociais e em audiências é obrigatório o uso de terno.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 32</strong> Aqueles que exercem cargos jurídicos representam o judiciário, devendo manter uma boa postura e aparência.</p>
-            <br>
-            <ul>
-              <li>I -  É vedado aos membros do poder judiciário a participação ou manifestação de processos ou condutas ilegais. Fica autorizado a participação de ações ilegais somente com a prévia autorização da Corregedoria.</li>
-              
+          <p>⚖️ <strong>Art. 28</strong> Ao juiz incumbirá prover à regularidade do processo e manter a ordem no curso dos respectivos atos, podendo, para tal fim, requisitar a força pública.</p>
+          <br>
+          <p>⚖️ <strong>Art. 29</strong> O juiz não poderá exercer jurisdição no processo em que:</p>
+          <br>
+          <ul>
+              <li>I -  tiver funcionado seu cônjuge ou parente, como defensor ou advogado, autoridade policial, auxiliar da justiça ou perito;</li>
+              <li>II - ele próprio houver desempenhado qualquer dessas funções ou servido como testemunha; se for amigo íntimo ou inimigo capital de qualquer deles;</li>
+              <li>III -  se ele, seu cônjuge, estiver respondendo a processo por fato análogo, sobre cujo caráter criminoso haja controvérsia;</li>
+              <li>IV -  se for credor ou devedor, tutor ou curador, de qualquer das partes;</li>
+              <li>V -  se for sócio, acionista ou administrador de sociedade interessada no processo.</li>
             </ul>
-            <br>
-            <p>⚖️ <strong>Art. 33</strong> Obrigatório o uso do crachá (MASCULINO: 64 / FEMININO: 62) durante representações judiciais.</p>
             <br>
         </div>
         <div class="col-12">
           <h2 class="contact-title">Capítulo VI - DOS PERITOS</h2>
           <br>
           <br>
-            <p>⚖️ <strong>Art. 34</strong> As penalidades são:</p>
-            <br>
-            <p>Advertência Verbal</p>
-            <p>Advertência¹</p>
-            <p>Advertência²</p>
-            <p>Exoneração</p>
-            <br>
-            <p>⚖️ <strong>Art. 35</strong> O acúmulo ou reincidência em advertências poderá ocasionar em exoneração imediata.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 36</strong> A ausência das atividades jurídicas injustificadas em prazos maiores que três (03) dias poderá acarretar em exoneração imediata.</p>
-            <br>
+          <p>⚖️ <strong>Art. 30</strong> O perito, ainda quando não oficial, estará sujeito à disciplina judiciária.</p>
+          <br>
+          <p>⚖️ <strong>Art. 31</strong> As partes não intervirão na nomeação do perito.</p>
+          <br>
+          <p>⚖️ <strong>Art. 32</strong> O perito nomeado pela autoridade será obrigado a aceitar o encargo, sob pena de multa, salvo motivo plausível.</p>
+          <br>
+
         </div>
         <div class="col-12">
           <h2 class="contact-title">Capítulo VII - DOS DOCUMENTOS</h2>
           <br>
-          <br>
-            <p>⚖️ <strong>Art. 37</strong> A Defensoria Pública fica limitado a assistência jurídica.</p>
-            <br>
-            <br>
-            <p>⚖️ <strong>Art. 38</strong> Necessário pagamento de taxa semanal, na falta a licença será suspensa.</p>
-            <br>
-          
-        </div>
 
-      <div class="col-12">
+          <br>
+      
+          <p>⚖️ <strong>Art. 33</strong> Salvo os casos expressos em lei, as partes poderão apresentar documentos em qualquer fase do processo.</p>
+          <br>
+          <p>⚖️ <strong>Art. 34</strong> Todos os documentos devem ser anexados nos autos do processo e/ou devem estar em domínio do poder judiciário.</p>
+          <br>
+        </div>
+        <div class="col-12">
           <h2 class="contact-title">Capítulo VIII - DA PRISÃO EM FLAGRANTE</h2>
+          <br>
+          <br>
+          <p>⚖️ <strong>Art. 35</strong> Qualquer cidadão e as autoridades policiais deverão prender quem quer que seja encontrado em flagrante delito.</p>
+          <br>
+          <p>⚖️ <strong>Art. 36</strong> Considera-se em flagrante delito quem:</p>
+          <br>
+          <ul>
+              <li>I -  está cometendo a infração penal;</li>
+              <li>II - acaba de cometê-la;</li>
+              <li>III -  é perseguido, logo após, pela autoridade, pelo ofendido ou por qualquer pessoa, em situação que faça presumir ser autor da infração;</li>
+              <li>IV -  é encontrado, logo depois, com instrumentos, armas, objetos ou papéis que o façam presumir ser ele autor da infração.</li>
+            </ul>
+            <br>
+          <p>⚖️ <strong>Art. 37</strong> A prisão de qualquer pessoa e o local onde se encontre serão comunicados imediatamente ao juiz competente, à família do preso ou à pessoa por ele indicada.</p>
           <br>
         </div>
         <div class="col-12">
           <h2 class="contact-title">Capítulo IX - DA RESTITUIÇÃO DAS COISAS APREENDIDAS</h2>
           <br>
+          <br>
+          <p>⚖️ <strong>Art. 38</strong> Antes de transitar em julgado a sentença final, as coisas apreendidas não poderão ser restituídas enquanto interessarem ao processo.</p>
+          <br>
+          <p>⚖️ <strong>Art. 39</strong> A restituição, quando cabível, poderá ser ordenada pela autoridade policial ou juiz, mediante termo nos autos, desde que não exista dúvida quanto ao direito do reclamante.</p>
+          <br>
+          <ul>
+              <li>I -  Se duvidoso esse direito, o pedido de restituição autuar-se-á em apartado. Em tal caso, só o juiz poderá decidir o incidente.</li>
+              </ul>
+            <br>
+
         </div>
         <div class="col-12">
           <h2 class="contact-title">Capítulo X - AUDIÊNCIA DE CUSTÓDIA</h2>
+          <br>
+          <br>
+          <p>⚖️ <strong>Art. 40</strong> Os detidos em flagrante acompanhado de advogado poderá solicitar ser conduzido a presença de um magistrado num prazo máximo de 15 minutos após o ato da prisão.</p>
+          <br>
+          <p>⚖️ <strong>Art. 41</strong> A audiência de custódia deverá ser acompanhada pelo responsável dos autos da prisão e do advogado de defesa.</p>
+          <br>
+          <p>⚖️ <strong>Art. 42</strong> Caso seja constatada alguma irregularidade no ato da prisão, será concedida liberdade provisória.</p>
           <br>
         </div>
         <div class="col-12">
           <h2 class="contact-title">Capítulo XI - FORO PRIVILEGIADO</h2>
           <br>
+          <br>
+          <p>⚖️ <strong>Art. 43</strong> O foro privilegiado é um recurso extraordinário que garante o direito ao ocupador dos cargos de administração pública o exercício de sua função sem que lhe seja causado dolo ou impedimento.</p>
+          <br>
+          <p>⚖️ <strong>Art. 44</strong> Será concedido foro privilegiado aos cidadãos que possuírem cargo de:</p>
+          <br>
+          <ul>
+              <li>I -  Governadores, Prefeitos e Vereadores;</li>
+              <li>II -  Juízes e Desembargadores;</li>
+              <li>III -  Conselho da Ordem dos Advogados;</li>
+              <li>IV -  Advogados, quando em exercício de função;</li>
+              <li>V - Delegados, Comandantes e Sub-Comandantes de Polícia em exercício de função.</li>
+              </ul>
+          <br>
+          <p>⚖️ <strong>Art. 45</strong> Fica vedado a prisão ou detenção dos portadores destes títulos sem mandado de prisão expedido pelo Tribunal de Justiça, salvo em casos de prisão em flagrante de crimes hediondos.</p>
+          <br>
+          <p>⚖️ <strong>Art. 46</strong> Os comandantes de Polícia e Delegados podem ser presos caso seja solicitado pela corregedoria.</p>
+          <br>
+          <p>⚖️ <strong>Art. 47</strong> Os portadores de foro privilegiado devem ser conduzidos a Polícia Civil ou Polícia Federal para prestar depoimento sobre as acusações, fica a disposição dos delegados a instauração do inquérito ou arquivamento.</p>
+          <br>
+          <p>⚖️ <strong>Art. 48</strong> As investigações desses membros devem ser conduzidas preferencialmente pela Polícia Federal, ou conter a participação da mesma.</p>
+          <br><br><br><br><br>
+          <p>✳ Atualizado em 28 de Março de 2024</p>
         </div>
+      
     </div>
   </section>
   <!-- ================ contact section end ================= -->

@@ -35,7 +35,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link <?php if($err_profile == true) { echo'disabled text-danger';}?>" data-bs-toggle="collapse" href="#cras" aria-expanded="false" aria-controls="cras">
-              <i class="menu-icon mdi mdi-briefcase-upload"></i>
+              <i class="menu-icon mdi mdi-file-tree"></i>
               <span class="menu-title">FAMÍLIAS</span>
               <i class="menu-arrow"></i> 
             </a>
@@ -49,7 +49,30 @@
               </ul>
             </div>
           </li>
-      
+          <li class="nav-item">
+            <a class="nav-link <?php if($err_profile == true) { echo'disabled text-danger';}?>" data-bs-toggle="collapse" href="#portarma" aria-expanded="false" aria-controls="portarma">
+              <i class="menu-icon mdi mdi-file-powerpoint-box"></i>
+              <span class="menu-title">PORTE DE ARMA</span>
+              <i class="menu-arrow"></i> 
+            </a>
+            <div class="collapse" id="portarma">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../admin/portarma.php">Solicitar</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#adocao" aria-expanded="false" aria-controls="adocao">
+              <i class="menu-icon mdi mdi-face"></i>
+              <span class="menu-title">Adoção</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="adocao">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../admin/adocao.php">Adoção</a></li>
+              </ul>
+            </div>
+          </li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
               <i class="menu-icon mdi mdi-layers-outline"></i>

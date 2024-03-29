@@ -20,10 +20,13 @@
                                     <a class="nav-link" href="service.php">Serviços</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="attorneys.php">Membros</a>
+                                    <a class="nav-link" href="membros.php">Membros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="calculadora-penal.php">Calculadora</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle disabled" href="blog.php" id="navbarDropdown"
+                                    <a class="nav-link dropdown-toggle" href="blog.php" id="navbarDropdown"
                                         role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Documentação
                                     </a>

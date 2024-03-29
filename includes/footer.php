@@ -35,7 +35,7 @@
                         <ul>
                             <li><a href="#"><i class="ti-mobile"></i>180</a></li>
                             <li><a href="https://discord.gg/VgJdT7WGrp"><i class="ti-email"></i>Discord</a></li>
-                            <li><a href="#"><i class="ti-world"></i> ariclawyerfirm.com</a></li>
+                            <li><a href="malito:erickcls@juridicorevoada.com"><i class="ti-world"></i>erickcls@juridicorevoada.com</a></li>
                         </ul>
                     </div>
                 </div>

@@ -157,12 +157,17 @@ include('includes/head.php');
           <h2 class="contact-title">Capítulo IV - DOS PODERES</h2>
           <br>
           <br>
-            <p>⚖️ <strong>Art. 26</strong> O Tribunal de Justiça é constituído da seguinte forma hierárquica:</p>
+            <p>⚖️ <strong>Art. 26-a</strong> O Tribunal de Justiça é constituído da seguinte forma hierárquica:</p>
             <br>
             <P>Desembargador</p>
 
             <P>Juiz de Direiro</p>
 
+            <P>Oficial de Justiça</p>
+
+            <br>
+            <p>⚖️ <strong>Art. 26-b</strong> A Ordem dos Advogados do Brasil é constituída da seguinte forma hierárquica:</p>
+            <br>
             <P>Diretor</p>
 
             <P>Conselheiro</p>
@@ -196,7 +201,7 @@ include('includes/head.php');
             <p>⚖️ <strong>Art. 29</strong> Só poderá ter organizações como cliente os que estiverem no cargo de Advogado Sênior ou acima.</p>
             <br>
             <br>
-            <p>⚖️ <strong>Art. 30</strong> Aqueles que trabalham no judiciário devem exercer de forma independente, não podendo possuir outro vínculo empregatício. Exceto Defensor Público, pois há autorização do conselho e direção</p>
+            <p>⚖️ <strong>Art. 30</strong> Aqueles que trabalham no judiciário devem exercer de forma independente, não podendo possuir outro vínculo empregatício. Exceto os que ocupam o cargo de Defensor Público</p>
             <br>
         </div>
         <div class="col-12">
@@ -225,7 +230,9 @@ include('includes/head.php');
             <p>Advertência Verbal</p>
             <p>Advertência¹</p>
             <p>Advertência²</p>
+            <p>Suspensão</p>
             <p>Exoneração</p>
+            <p>Aposentadoria compulsória</p>
             <br>
             <p>⚖️ <strong>Art. 35</strong> O acúmulo ou reincidência em advertências poderá ocasionar em exoneração imediata.</p>
             <br>
@@ -241,10 +248,11 @@ include('includes/head.php');
             <br>
             <br>
             <p>⚖️ <strong>Art. 38</strong> Necessário pagamento de taxa semanal, na falta a licença será suspensa.</p>
-            <br>
+            <br><br><br><br><br>
+          <p>✳ Atualizado em 28 de Março de 2024</p>
           
         </div>
-        <p><i class="bi bi-asterisk"></i> Atualizado em 28 de Março de 2024</p>
+
 
       
       </div>

@@ -6,7 +6,7 @@ include('../includes/verificacao.php');
 $page_title = "LOGS";
 
  //Limita o número de registros a serem mostrados por página
- $limite = 10;
+ $limite = 25;
  //Se pg não existe atribui 1 a variável pg
  $pg = (isset($_GET['pg'])) ? (int)$_GET['pg'] : 1 ;
  //Atribui a variável inicio o inicio de onde os registros vão ser mostrados por página, exemplo 0 à 10, 11 à 20 e assim por diante

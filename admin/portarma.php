@@ -3,7 +3,7 @@ ob_start();
 require('../config.php');
 include('../includes/verificacao.php');
 
-$page_title = "PORTE DE ARMA";
+$page_title = "Registrar Adoção";
 
 $data = new DateTime();
 $dataf = new DateTime('+4 days');
@@ -32,13 +32,12 @@ $dataformf = $dataf->format('d-m-Y');
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-    $query = "INSERT INTO porte_arma (nome,passport,rg,arma,taser,municao,data,validade,user) VALUES (:nome,:passport,:rg,:arma,:taser,:municao,:data,:validade,:user)";
+    $query = "INSERT INTO porte_arma (nome,passport,rg,arma,municao,data,validade,user) VALUES (:nome,:passport,:rg,:arma,:municao,:data,:validade,:user)";
     $edit = $pdo->prepare($query);
     $edit->bindParam(':nome', $_POST["nome"], PDO::PARAM_STR);
     $edit->bindParam(':passport', $_POST["passport"], PDO::PARAM_INT);
     $edit->bindParam(':rg', $_POST["rg"], PDO::PARAM_STR);
     $edit->bindParam(':arma', $_POST['arma'], PDO::PARAM_STR);
-    $edit->bindParam(':taser', $_POST['taser'], PDO::PARAM_STR);
     $edit->bindParam(':municao', $_POST['municao'], PDO::PARAM_STR);
     $edit->bindParam(':data', $dataform, PDO::PARAM_STR);
     $edit->bindParam(':validade', $dataformf, PDO::PARAM_STR);
@@ -97,17 +96,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <label class="sr-only" for="inlineFormInputName2">ARMA</label>
                     <select class="form-control" name="arma">
                     <option value="Selecione" default>Selecione</option>
-                    <option value="Outro" default>Outro</option>
+                    <option value="Taser" default>Taser</option>
                     <option value="Glock" default>Glock</option>
                     <option value="Pistola .50" default>Pistola .50</option>
                     <option value="HKP7 (Fajuta)" default>HKP7 (Fajuta)</option>
-                    </select>
-                        </div>
-                        <div class="col-md-2">
-                    <label class="sr-only" for="inlineFormInputName2">Taser</label>
-                    <select class="form-control" name="taser">
-                    <option value="Selecione" default>Selecione</option>
-                    <option value="Sim" default>Sim</option>
                     <option value="Não" default>Não</option>
                     </select>
                         </div>
