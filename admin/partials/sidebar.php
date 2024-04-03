@@ -94,6 +94,34 @@
               </ul>
             </div>
           </li>
+          <li class="nav-item nav-category">FINANCEIRO</li>
+          <li class="nav-item">
+            <a class="nav-link <?php if($err_profile == true) { echo'disabled text-danger';}?>" data-bs-toggle="collapse" href="#painel" aria-expanded="false" aria-controls="painel">
+              <i class="menu-icon mdi mdi-square-inc-cash"></i>
+              <span class="menu-title">PAINEL</span>
+              <i class="menu-arrow"></i> 
+            </a>
+            <div class="collapse" id="painel">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../admin/paineldep.php">Depósito</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../admin/extrato.php">Extrato</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  <?php if($err_profile == true) { echo'disabled text-danger';}?>" href="../admin/verservicos.php">
+              <i class="menu-icon mdi mdi-label"></i>
+              <span class="menu-title">SERVIÇOS</span>
+            </a>
+          </li>
+          <?php if($uss_rank >= 5)  {?>
+          <li class="nav-item">
+            <a class="nav-link  <?php if($err_profile == true) { echo'disabled text-danger';}?>" href="../admin/gerservicos.php">
+              <i class="menu-icon mdi mdi-library-plus"></i>
+              <span class="menu-title">ADICIONAR SERVIÇO</span>
+            </a>
+          </li>
+          <?php }?>
           <?php if($uss_rank > 1)  {?>
           <li class="nav-item nav-category">ADMINISTRAÇÃO</li>
           <li class="nav-item">
@@ -119,32 +147,6 @@
             </a>
           </li>
           <?php }?>
-          <li class="nav-item nav-category">FINANCEIRO</li>
-          <li class="nav-item">
-            <a class="nav-link  <?php if($err_profile == true) { echo'disabled text-danger';}?>" href="../admin/verservicos.php">
-              <i class="menu-icon mdi mdi-alphabetical"></i>
-              <span class="menu-title">SERVIÇOS</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  <?php if($err_profile == true) { echo'disabled text-danger';}?>" href="../admin/gerservicos.php">
-              <i class="menu-icon mdi mdi-alphabetical"></i>
-              <span class="menu-title">ADICIONAR SERVIÇO</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link <?php if($err_profile == true) { echo'disabled text-danger';}?>" data-bs-toggle="collapse" href="#painel" aria-expanded="false" aria-controls="painel">
-              <i class="menu-icon mdi mdi-file-powerpoint-box"></i>
-              <span class="menu-title">PAINEL</span>
-              <i class="menu-arrow"></i> 
-            </a>
-            <div class="collapse" id="painel">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../admin/paineldep.php">Depósito</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../admin/verport.php">Extrato</a></li>
-              </ul>
-            </div>
-          </li>
           <li class="nav-item nav-category">DOCUMENTAÇÃO</li>
         </ul>
       </nav>

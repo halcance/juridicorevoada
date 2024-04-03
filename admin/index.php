@@ -28,6 +28,7 @@ $ptotal = $pntmt->rowCount();
 // CONSULTA DINHEIRO PAINEL
 $pan = $pdo->prepare("SELECT total FROM painel ORDER BY id DESC");
 $pan->execute();
+$panmov = $pan->rowCount();
 $pantotal = $pan->fetch(PDO::FETCH_ASSOC);
 $painel = $pantotal["total"];
 ?>
@@ -83,12 +84,12 @@ $painel = $pantotal["total"];
                       <div class="col-sm-12">
                         <div class="statistics-details d-flex align-items-center justify-content-between">
                           <div>
-                            <p class="statistics-title">USUÁRIOS CADASTRADOS</p>
+                            <p class="statistics-title">USUÁRIOS</p>
                             <h3 class="rate-percentage"><?php echo $mtotal; ?></h3>
                             <p class="text-success d-flex"><i class="mdi mdi-menu-up"></i><span>+0.1%</span></p>
                           </div>
                           <div>
-                            <p class="statistics-title">FAMÍLIAS CADASTRADAS</p>
+                            <p class="statistics-title">FAMÍLIAS</p>
                             <h3 class="rate-percentage"><?php echo $ctotal; ?></h3>
                             <p class="text-success d-flex"><i class="mdi mdi-menu-up"></i><span>+0.3%</span></p>
                           </div>
@@ -108,8 +109,8 @@ $painel = $pantotal["total"];
                             <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
                           </div>
                           <div class="d-none d-md-block">
-                            <p class="statistics-title">Avg. Time on Site</p>
-                            <h3 class="rate-percentage">2m:35s</h3>
+                            <p class="statistics-title">MOV. FINANCEIRAS</p>
+                            <h3 class="rate-percentage"><?php echo $ptotal; ?></h3>
                             <p class="text-success d-flex"><i class="mdi mdi-menu-down"></i><span>+0.8%</span></p>
                           </div>
                         </div>
@@ -141,16 +142,10 @@ $painel = $pantotal["total"];
                           <div class="col-md-6 col-lg-12 grid-margin stretch-card">
                             <div class="card bg-primary card-rounded">
                               <div class="card-body pb-0">
-                                <h4 class="card-title card-title-dash text-white mb-4">Status Summary</h4>
+                                <h4 class="card-title card-title-dash text-white mb-4">MURAL DE AVISOS</h4>
                                 <div class="row">
-                                  <div class="col-sm-4">
-                                    <p class="status-summary-ight-white mb-1">Closed Value</p>
-                                    <h2 class="text-info">357</h2>
-                                  </div>
-                                  <div class="col-sm-8">
-                                    <div class="status-summary-chart-wrapper pb-4">
-                                      <canvas id="status-summary"></canvas>
-                                    </div>
+                                  <div class="col">
+                                    <p class="status-summary-ight-white mb-1">Sem avisos no momento.</p>
                                   </div>
                                 </div>
                               </div>
@@ -778,12 +773,7 @@ $painel = $pantotal["total"];
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
-        <footer class="footer">
-          <div class="d-sm-flex justify-content-center justify-content-sm-between">
-            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights reserved.</span>
-          </div>
-        </footer>
+              <?php include('partials/footer.php') ?>
         <!-- partial -->
       </div>
       <!-- main-panel ends -->
@@ -792,26 +782,6 @@ $painel = $pantotal["total"];
   </div>
   <!-- container-scroller -->
 
-  <!-- plugins:js -->
-  <script src="assets/vendors/js/vendor.bundle.base.js"></script>
-  <!-- endinject -->
-  <!-- Plugin js for this page -->
-  <script src="assets/vendors/chart.js/Chart.min.js"></script>
-  <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-  <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
-
-  <!-- End plugin js for this page -->
-  <!-- inject:js -->
-  <script src="assets/js/off-canvas.js"></script>
-  <script src="assets/js/hoverable-collapse.js"></script>
-  <script src="assets/js/template.js"></script>
-  <script src="assets/js/settings.js"></script>
-  <script src="assets/js/todolist.js"></script>
-  <!-- endinject -->
-  <!-- Custom js for this page-->
-  <script src="assets/js/dashboard.js"></script>
-  <script src="assets/js/Chart.roundedBarCharts.js"></script>
-  <!-- End custom js for this page-->
 </body>
 
 </html>

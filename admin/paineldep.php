@@ -8,6 +8,8 @@ $page_title = "DEPÓSITO FINANCEIRO";
 $data = new DateTime();
 $dataform = $data->format('d-m-Y H:i:s');
 
+$deposito = $saque = $razao = "";
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -35,7 +37,9 @@ $stmt->execute();
 $totalpainel = $stmt->fetch(PDO::FETCH_ASSOC);
 $painel = $totalpainel["total"];
 
+if($_SERVER["REQUEST_METHOD"] == "POST"){
 
+ 
 // VARIAVEIS
 $deposito = $_POST["deposito"];
 $saque = $_POST["saque"];
@@ -51,23 +55,6 @@ if(empty($_POST['deposito'])){
   $deposito = 0;
   $total = $painel - $saque;
 }
-
-
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-
-     // VARIAVEIS
-     $deposito = $_POST["deposito"];
-     $saque = $_POST["saque"];
-     
-     if(empty($_POST['saque'])){
-       $saque = 0;
-       $total = $deposito + $painel;
-     }
-     
-     if(empty($_POST['deposito'])){
-       $deposito = 0;
-       $total = $painel - $saque;
-     }
 
   $sql = "INSERT INTO painel (deposito, saque, razao, user, total, data) VALUES (:deposito, :saque, :razao, :user, :total, :data)";
   
@@ -85,6 +72,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   $param_saque = $saque;
   $param_razao = $razao;
   $param_usuario = $username;
+  $param_total = $total;
     // Tente executar a declaração preparada
     if($conn->execute()){
         header("Location: ../admin/paineldep.php");
@@ -102,7 +90,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <div class="card-body">
                   <h4 class="card-title">DESPOSITAR UM VALOR</h4>
                   <p class="card-description">
-                    Preencha o formulário caso necessite solicitar uma mudança em alguma família, é importante que preencha todos os campos corretamente.
+                    <strong>APÓS o depósito dentro da cidade</strong> preencha o formulário abaixo para registrar um depósito.
                   </p>
                   <form class="form-inline" action="" method="POST">
                   <div class="form-group">
@@ -126,7 +114,31 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </div>
               </div>
             </div>
-
+            <div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">SACAR VALORES</h4>
+                  <p class="card-description">
+                    Sacar valor do painel
+                  </p>
+                  <form class="form-inline" action="" method="POST">
+                  <div class="form-group">
+                    <label class="sr-only" for="inlineFormInputName2">RAZÃO</label>
+                    <select class="form-control" name="razao">
+                    <option value="Selecione" default>Selecione...</option>
+                    <option value="PAGAMENTOS" default>Pagamentos</option>
+                    <option value="AJUSTES" default>Reajuste</option>
+                            </select>
+                            </div>
+                            <div class="form-group">
+                      <label for="exampleInputPassword4">VALOR A SER SACADO</label>
+                      <input type="text" id="rg" name="saque" class="form-control" placeholder="150000">
+                    </div>
+                    <button type="submit" class="btn btn-warning mb-2">SACAR</button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- content-wrapper ends -->

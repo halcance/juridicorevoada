@@ -3,12 +3,11 @@ ob_start();
 require('../config.php');
 include('../includes/verificacao.php');
 
-$page_title = "SERVIÇOS";
+$page_title = "GERENCIAR USUÁRIOS";
 
-$stmt = $pdo->prepare("SELECT * FROM servicos");
+$stmt = $pdo->prepare("SELECT * FROM painel ORDER BY id DESC");
 $stmt->execute();
 $total = $stmt->rowCount();
-
 
 ?>
 <!DOCTYPE html>
@@ -32,31 +31,38 @@ $total = $stmt->rowCount();
                       <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Confira os valores e serviços disponíveis abaixo:</h4>
+                  <h4 class="card-title">EXTRATO FINANCEIRO</h4>
+                  <p class="card-description">
+                    Confira abaixo todas as movimentações financeiras
+                  </p>
                   <div class="table-responsive">
-                    <table class="table table-bordered">
+                    <table class="table table-striped">
                       <thead>
                         <tr>
                           <th>
-                            SERVIÇO
+                            ID
                           </th>
                           <th>
-                           VALOR
+                            TIPO
                           </th>
                           <th>
-                            ADVOGADO
+                            VALOR
                           </th>
                           <th>
-                           PAINEL
+                            RAZÃO
                           </th>
                           <th>
-                            DATA
+                            USUÁRIO
                           </th>
-                          <?php if($uss_rank >= 5)  {?>
-                            <th>
-                            DATA
+                          <th>
+                          DATA
                           </th>
-                          <?php }?>
+                          <th>
+                           SALDO*
+                          </th>
+                          <th>
+                           Ações
+                          </th>
                         </tr>
                       </thead>
                       <tbody>
@@ -64,26 +70,36 @@ $total = $stmt->rowCount();
               
               ?>
                         <tr>
-                          <td>
-                          <?php echo $dados["name"]; ?>
+                          <td class="py-1">
+                          <?php echo $dados["id"]; ?>
                           </td>
                           <td>
-                          <?php echo number_format( $dados["valor"], 0, '.', '.' ); ?>
+                          <?php if($dados['saque'] == 0) { echo 'DEPÓSITO';}else{echo'SAQUE';} ?>
                           </td>
                           <td>
-                          <?php echo number_format( $dados["oab"], 0, '.', '.' ); ?>
+                          <?php if($dados['saque'] == 0) {
+              echo number_format( $dados["deposito"], 0, ',', '.' ); 
+              }
+              else{
+                echo number_format( $dados["saque"], 0, ',', '.' );
+              }
+                  ?>
                           </td>
                           <td>
-                          <?php echo number_format( $dados["painel"], 0, '.', '.' ); ?>
+                          <?php echo $dados["razao"]; ?>
                           </td>
                           <td>
-                          <?php echo $dados["date"]; ?>
+                          <?php echo $dados["user"]; ?>
                           </td>
-                          <?php if($uss_rank >= 5)  {?>
-                            <td>
-                            <a class="btn btn-sm btn-info" href="editservico.php?edit=<?php echo $dados["id"] ?>"><i class="mdi mdi-briefcase-upload"></i></a>
+                          <td>
+                          <?php echo $dados["data"]; ?>
                           </td>
-                          <?php }?>
+                          <td>
+                          <?php echo $dados["total"]; ?>
+                          </td>
+                          <td>
+                          BUTTON
+                          </td>
                         </tr>
                 <?php } ?>
                       </tbody>
@@ -104,6 +120,7 @@ $total = $stmt->rowCount();
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
+
 </body>
 
 </html>
