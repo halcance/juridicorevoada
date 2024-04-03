@@ -153,13 +153,27 @@ if(isset($_GET["edit"])){
                               <option value="ESTAGIÁRIO">ESTAGIÁRIO</option>
                               <option value="DEFENSOR PÚBLICO">DEFENSOR PÚBLICO</option>
                               <option value="ADVOGADO JÚNIOR">ADVOGADO JÚNIOR</option>
-                              <option value="ADVOGADO PLENO">ADVOGADO PLENO</option>
-                              <option value="ADVOGADO SÊNIOR">ADVOGADO SÊNIOR</option>
-                              <option value="ADVOGADO MASTER">ADVOGADO MASTER</option>
-                              <option value="CONSELHEIRO FEDERAL">CONSELHEIRO FEDERAL</option>
-                              <option value="DIRETOR(A)">DIRETOR(A) OAB</option>
-                              <option value="JUIZ DE DIREITO">JUIZ DE DIREITO</option>
-                              <option value="DESEMBARGADOR">DESEMBARGADOR</option>
+                              <?php if($uss_rank > 3) { ?>
+                                <option value="ADVOGADO PLENO">ADVOGADO PLENO</option>
+                              <?php } ?>
+                              <?php if($uss_rank > 3) { ?>
+                                <option value="ADVOGADO SÊNIOR">ADVOGADO SÊNIOR</option>
+                              <?php } ?>
+                              <?php if($uss_rank > 3) { ?>
+                                <option value="ADVOGADO MASTER">ADVOGADO MASTER</option>
+                              <?php } ?>
+                              <?php if($uss_rank > 4) { ?>
+                                <option value="CONSELHEIRO FEDERAL">CONSELHEIRO FEDERAL</option>
+                              <?php } ?>
+                              <?php if($uss_rank > 5) { ?>
+                                <option value="DIRETOR(A)">DIRETOR(A) OAB</option>
+                              <?php } ?>
+                              <?php if($uss_rank > 5) { ?>
+                                <option value="JUIZ DE DIREITO">JUIZ DE DIREITO</option>
+                              <?php } ?>
+                              <?php if($uss_rank > 5) { ?>
+                                <option value="DESEMBARGADOR">DESEMBARGADOR</option>
+                              <?php } ?>
                             </select>
                           </div>
                         </div>
@@ -171,7 +185,15 @@ if(isset($_GET["edit"])){
                             <select class="form-control" name="rank">
                               <option value="1">1</option>
                               <option value="2">2</option>
+                              <?php if($uss_rank > 3) { ?>
                               <option value="3">3</option>
+                              <?php } ?>
+                              <?php if($uss_rank > 4) { ?>
+                              <option value="4">4</option>
+                              <?php } ?>
+                              <?php if($uss_rank > 5) { ?>
+                              <option value="5">5</option>
+                              <?php } ?>
                             </select>
                           </div>
                         </div>

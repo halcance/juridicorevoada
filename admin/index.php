@@ -17,6 +17,19 @@ $ctotal = $ctmt->rowCount();
 $cntmt = $pdo->prepare("SELECT id FROM cna WHERE status='REGULAR'");
 $cntmt->execute();
 $cntotal = $cntmt->rowCount();
+// CONSULTA VENDAS
+$vntmt = $pdo->prepare("SELECT id FROM vendas");
+$vntmt->execute();
+$vtotal = $vntmt->rowCount();
+// CONSULTA PORTES
+$pntmt = $pdo->prepare("SELECT id FROM porte_arma");
+$pntmt->execute();
+$ptotal = $pntmt->rowCount();
+// CONSULTA DINHEIRO PAINEL
+$pan = $pdo->prepare("SELECT total FROM painel ORDER BY id DESC");
+$pan->execute();
+$pantotal = $pan->fetch(PDO::FETCH_ASSOC);
+$painel = $pantotal["total"];
 ?>
 
 <!DOCTYPE html>
@@ -85,13 +98,13 @@ $cntotal = $cntmt->rowCount();
                             <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
                           </div>
                           <div class="d-none d-md-block">
-                            <p class="statistics-title">Avg. Time on Site</p>
-                            <h3 class="rate-percentage">2m:35s</h3>
+                            <p class="statistics-title">VENDAS REALIZADAS</p>
+                            <h3 class="rate-percentage"><?php echo $vtotal; ?></h3>
                             <p class="text-success d-flex"><i class="mdi mdi-menu-down"></i><span>+0.8%</span></p>
                           </div>
                           <div class="d-none d-md-block">
-                            <p class="statistics-title">New Sessions</p>
-                            <h3 class="rate-percentage">68.8</h3>
+                            <p class="statistics-title">PORTES LIBERADOS</p>
+                            <h3 class="rate-percentage"><?php echo $ptotal; ?></h3>
                             <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
                           </div>
                           <div class="d-none d-md-block">
@@ -184,12 +197,12 @@ $cntotal = $cntmt->rowCount();
                               <div class="card-body">
                                 <div class="d-sm-flex justify-content-between align-items-start">
                                   <div>
-                                    <h4 class="card-title card-title-dash">Market Overview</h4>
-                                   <p class="card-subtitle card-subtitle-dash">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                    <h4 class="card-title card-title-dash">PAINEL FINANCEIRO</h4>
+                                   <p class="card-subtitle card-subtitle-dash">Resumo das movimentações financeiras</p>
                                   </div>
                                   <div>
                                     <div class="dropdown">
-                                      <button class="btn btn-secondary dropdown-toggle toggle-dark btn-lg mb-0 me-0" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> This month </button>
+                                      <button class="btn btn-secondary dropdown-toggle toggle-dark btn-lg mb-0 me-0 disabled" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Configurações</button>
                                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                                         <h6 class="dropdown-header">Settings</h6>
                                         <a class="dropdown-item" href="#">Action</a>
@@ -202,7 +215,7 @@ $cntotal = $cntmt->rowCount();
                                   </div>
                                 </div>
                                 <div class="d-sm-flex align-items-center mt-1 justify-content-between">
-                                  <div class="d-sm-flex align-items-center mt-4 justify-content-between"><h2 class="me-2 fw-bold">$36,2531.00</h2><h4 class="me-2">USD</h4><h4 class="text-success">(+1.37%)</h4></div>
+                                  <div class="d-sm-flex align-items-center mt-4 justify-content-between"><h2 class="me-2 fw-bold">$ <?php echo number_format( $painel, 0, '.', '.' ); ?></h2><h4 class="me-2">DÓLARES</h4><h4 class="text-success">(+1.37%)</h4></div>
                                   <div class="me-3"><div id="marketing-overview-legend"></div></div>
                                 </div>
                                 <div class="chartjs-bar-wrapper mt-3">
@@ -780,24 +793,24 @@ $cntotal = $cntmt->rowCount();
   <!-- container-scroller -->
 
   <!-- plugins:js -->
-  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <script src="assets/vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
-  <script src="vendors/chart.js/Chart.min.js"></script>
-  <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-  <script src="vendors/progressbar.js/progressbar.min.js"></script>
+  <script src="assets/vendors/chart.js/Chart.min.js"></script>
+  <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
 
   <!-- End plugin js for this page -->
   <!-- inject:js -->
-  <script src="js/off-canvas.js"></script>
-  <script src="js/hoverable-collapse.js"></script>
-  <script src="js/template.js"></script>
-  <script src="js/settings.js"></script>
-  <script src="js/todolist.js"></script>
+  <script src="assets/js/off-canvas.js"></script>
+  <script src="assets/js/hoverable-collapse.js"></script>
+  <script src="assets/js/template.js"></script>
+  <script src="assets/js/settings.js"></script>
+  <script src="assets/js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-  <script src="js/dashboard.js"></script>
-  <script src="js/Chart.roundedBarCharts.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+  <script src="assets/js/Chart.roundedBarCharts.js"></script>
   <!-- End custom js for this page-->
 </body>
 

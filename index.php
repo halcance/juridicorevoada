@@ -217,99 +217,10 @@ $stmt->execute();
     <!-- cta_part part end-->
 
     <!--::review_part start::-->
-    <section class="review_part section_padding section_bg">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-9">
-                    <!-- MAIN SLIDES -->
-                    <div class="slider">
-                        <div data-index="1">
-                            <div class="client_review_text text-center">
-                                <p>"O trabalho da Ordem dos Advogados tem sido exemplar,
-                                     demonstrando compromisso inabalável com a justiça e excelência na defesa dos direitos dos cidadãos."</p>
-
-                            </div>
-                        </div>
-                        <div data-index="2">
-                            <div class="client_review_text text-center">
-                                <p>"A resolução de conflitos conduzida pelo tribunal foi excepcional, demonstrando profissionalismo, imparcialidade e garantindo justiça para todas as partes envolvidas. 
-                                    Estamos gratos pela eficiência e competência demonstradas durante todo o processo."</p>
-                            </div>
-                        </div>
-                        <div data-index="3">
-                            <div class="client_review_text text-center">
-                                <p>Thing yielding place gathered heaven second isn't darkness does not good very dry
-                                    morning
-                                    signs isn't for spirit stars man meat beginning. Meat earth. Face seas doesn't life
-                                    doesn't fruit brought life gathering also lights isn't day a wherein firmament
-                                    fruitful
-                                    read ability</p>
-                            </div>
-                        </div>
-                        <div data-index="4">
-                            <div class="client_review_text text-center">
-                                <p>Thing yielding place gathered heaven second isn't darkness does not good very
-                                    dry morning signs isn't for spirit stars man meat beginning. Meat earth.
-                                    Face seas doesn't life doesn't fruit brought life gathering also lights
-                                    isn't day a wherein firmament fruitful read ability</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <!-- THUMBNAILS -->
-                    <div class="slider-nav-thumbnails">
-                        <div class="slider-thumbnails">
-                            <img src="img/client/18225_1.png" alt="slideimg" class="image">
-                            <div class="client_review_text text-center">
-                                <h3>Andreza Vallence</h3>
-                                <h5>Diretora da OAB</h5>
-                            </div>
-                        </div>
-                        <div class="slider-thumbnails">
-                            <img src="img/client/client_2.png" alt="slideimg" class="image">
-                            <div class="client_review_text text-center">
-                                <h3>Daniel E Gilcritst</h3>
-                                <h5>Manager, Vision</h5>
-                            </div>
-                        </div>
-                        <div class="slider-thumbnails">
-                            <img src="img/client/client_3.png" alt="slideimg" class="image">
-                            <div class="client_review_text text-center">
-                                <h3>Richard Kellerman</h3>
-                                <h5>Manager, Vision</h5>
-                            </div>
-                        </div>
-                        <div class="slider-thumbnails">
-                            <img src="img/client/client_4.png" alt="slideimg" class="image">
-                            <div class="client_review_text text-center">
-                                <h3>Daniel E Gilcritst</h3>
-                                <h5>Manager, Vision</h5>
-                            </div>
-                        </div>
-                        <div class="slider-thumbnails">
-                            <img src="img/client/client_1.png" alt="slideimg" class="image">
-                            <div class="client_review_text text-center">
-                                <h3>Richard Kellerman</h3>
-                                <h5>Manager, Vision</h5>
-                            </div>
-                        </div>
-                        <div class="slider-thumbnails">
-                            <img src="img/client/client_2.png" alt="slideimg" class="image">
-                            <div class="client_review_text text-center">
-                                <h3>Daniel E Gilcritst</h3>
-                                <h5>Manager, Vision</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!--::blog_part end::-->
 
     <!-- team_part part start-->
-    <section class="blog_part section_padding">
+    <!-- <section class="blog_part section_padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-7 col-sm-10">
@@ -398,7 +309,7 @@ $stmt->execute();
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- team_part part end-->
 
     <!-- footer part start-->

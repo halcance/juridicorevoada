@@ -17,7 +17,7 @@
                                 </li>
                                 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="service.php">Serviços</a>
+                                    <a class="nav-link" href="servicos.php">Serviços</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="membros.php">Membros</a>

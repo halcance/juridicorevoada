@@ -5,24 +5,19 @@
                     <div class="single-footer-widget footer_1">
                         <a href="index.html"> <img src="img/footer-logo.png" alt=""> </a>
                         <p>A atuação do Judiciário se dá, exclusivamente, em casos concretos de conflitos de interesses trazidos à sua apreciação.</p>
-                        <div class="social_icon">
-                            <a href="#"> <i class="ti-facebook"></i> </a>
-                            <a href="#"> <i class="ti-twitter-alt"></i> </a>
-                            <a href="#"> <i class="ti-instagram"></i> </a>
-                            <a href="#"> <i class="ti-skype"></i> </a>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="col-sm-6 col-xl-3">
                     <div class="single-footer-widget">
                         <h4>Serviços</h4>
                         <ul>
-                            <li><a href="#">Car accident</a></li>
-                            <li><a href="#">Personal injury</a></li>
-                            <li><a href="#">Family law</a></li>
-                            <li><a href="#">Bank and financial</a></li>
-                            <li><a href="#">Capital market</a></li>
-                            <li><a href="#">Employment Law</a></li>
+                            <li><a href="#">Cartório</a></li>
+                            <li><a href="#">Casamentos</a></li>
+                            <li><a href="#">Processos</a></li>
+                            <li><a href="#">Seguro</a></li>
+                            <li><a href="#">Defesa Criminal</a></li>
+                            <li><a href="#">Ouvidoria</a></li>
                         </ul>
 
                     </div>
@@ -30,8 +25,7 @@
                 <div class="col-sm-6 col-xl-3">
                     <div class="single-footer-widget footer_icon">
                         <h4>Contato</h4>
-                        <p>4361 Morningview Lane Artland
-                            Latimer, IA 50452</p>
+                        <p>Burton | Carcer Way, S/N</p>
                         <ul>
                             <li><a href="#"><i class="ti-mobile"></i>180</a></li>
                             <li><a href="https://discord.gg/VgJdT7WGrp"><i class="ti-email"></i>Discord</a></li>

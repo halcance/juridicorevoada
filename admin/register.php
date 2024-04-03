@@ -146,17 +146,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   </div>
   <!-- container-scroller -->
   <!-- plugins:js -->
-  <script src="../admin/vendors/js/vendor.bundle.base.js"></script>
+  <script src="../admin/assets/vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
-  <script src="../admin/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../admin/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
   <!-- End plugin js for this page -->
   <!-- inject:js -->
-  <script src="../admin/js/off-canvas.js"></script>
-  <script src="../admin/js/hoverable-collapse.js"></script>
-  <script src="../admin/js/template.js"></script>
-  <script src="../admin/js/settings.js"></script>
-  <script src="../admin/js/todolist.js"></script>
+  <script src="../admin/assets/js/off-canvas.js"></script>
+  <script src="../admin/assets/js/hoverable-collapse.js"></script>
+  <script src="../admin/assets/js/template.js"></script>
+  <script src="../admin/assets/js/settings.js"></script>
+  <script src="../admin/assets/js/todolist.js"></script>
   <!-- endinject -->
 </body>
 

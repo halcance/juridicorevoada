@@ -1,4 +1,15 @@
 <head>
+    <?php 
+    require('config.php');
+$stmtman = $pdo->prepare("SELECT * FROM settings");
+$stmtman->execute();
+$dados = $stmtman->fetch(PDO::FETCH_ASSOC);
+$manu = $dados["manu"];
+
+if($manu == 1){
+    header("Location: ../manu/index.html");
+}
+?>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

@@ -97,16 +97,13 @@ if(isset($_GET['active'])){
                             Nome
                           </th>
                           <th>
-                            Passaporte
-                          </th>
-                          <th>
                             Cargo
                           </th>
                           <th>
                             Rank
                           </th>
                           <th>
-                            Criado em
+                          CADASTRO
                           </th>
                           <th>
                            Ativo?
@@ -131,9 +128,6 @@ if(isset($_GET['active'])){
                           <?php echo $dados["name"]; ?>
                           </td>
                           <td>
-                          <?php echo $dados["passport"]; ?>
-                          </td>
-                          <td>
                           <?php echo $dados["role"]; ?>
                           </td>
                           <td>
@@ -150,8 +144,12 @@ if(isset($_GET['active'])){
                           } ?>
                           </td>
                           <td>
-                          <a class="btn btn-sm btn-primary <?php if($dados["active"] == 1){echo "disabled";}?>" href="?active=<?php echo $dados["id"] ?>"><i class="mdi mdi-account-plus"></i></a>
-                          <a class="btn btn-sm btn-secondary <?php if($dados["active"] == 0 || $dados["rank"] >= $_SESSION["rank"]){echo "disabled";}?>" href="?deactive=<?php echo $dados["id"] ?>"><i class="mdi mdi-account-minus"></i></a>
+                          <?php if($dados["active"] == 1){ ?>
+                          <a class="btn btn-sm btn-primary" href="?active=<?php echo $dados["id"] ?>"><i class="mdi mdi-account-plus"></i></a>
+                         <?php } ?>
+                         <?php if($dados["active"] == 0 || $dados["rank"] >= $_SESSION["rank"]){ ?> 
+                          <a class="btn btn-sm btn-secondary" href="?deactive=<?php echo $dados["id"] ?>"><i class="mdi mdi-account-minus"></i></a>
+                          <?php } ?>
                           </td>
                         </tr>
                 <?php } ?>

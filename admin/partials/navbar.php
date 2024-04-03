@@ -129,7 +129,7 @@
               </a>
               <a class="dropdown-item preview-item">
                 <div class="preview-thumbnail">
-                  <img src="<?php echo $uss_image;?>" alt="image" class="img-sm profile-pic">
+                  <img src="<?php //echo $uss_image;?>" alt="image" class="img-sm profile-pic">
                 </div>
                 <div class="preview-item-content flex-grow py-2">
                   <p class="preview-subject ellipsis font-weight-medium text-dark">David Grey </p>

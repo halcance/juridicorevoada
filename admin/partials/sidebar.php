@@ -1,11 +1,17 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="../admin/index.php">
+            <a class="nav-link" href="../admin/">
               <i class="menu-icon mdi mdi-home"></i>
-              <span class="menu-title">Início</span>
+              <span class="menu-title">DASHBOARD</span>
             </a>
             </li>
+            <li class="nav-item">
+            <a class="nav-link" target="_blank" href="../index.php">
+              <i class="menu-icon mdi mdi-apple-safari"></i>
+              <span class="menu-title">SITE</span>
+            </a>
+          </li>
           <li class="nav-item nav-category">SERVIÇOS</li>
           <li class="nav-item">
             <a class="nav-link <?php if($err_profile == true) { echo'disabled text-danger';}?>" data-bs-toggle="collapse" href="#assist" aria-expanded="false" aria-controls="assist">
@@ -58,30 +64,33 @@
             <div class="collapse" id="portarma">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="../admin/portarma.php">Solicitar</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../admin/verport.php">Visualizar</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#adocao" aria-expanded="false" aria-controls="adocao">
               <i class="menu-icon mdi mdi-face"></i>
-              <span class="menu-title">Adoção</span>
+              <span class="menu-title">ADOÇÃO</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="adocao">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../admin/adocao.php">Adoção</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../admin/adocao.php">REGISTRAR</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../admin/vernascimento.php">VISUALIZAR</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
-              <i class="menu-icon mdi mdi-layers-outline"></i>
-              <span class="menu-title">Icons</span>
+            <a class="nav-link" data-bs-toggle="collapse" href="#casamento" aria-expanded="false" aria-controls="casamento">
+              <i class="menu-icon mdi mdi-diamond"></i>
+              <span class="menu-title">CASAMENTO</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="icons">
+            <div class="collapse" id="casamento">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../admin/casamento.php">REGISTRAR</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../admin/vercasamento.php">VISUALIZAR</a></li>
               </ul>
             </div>
           </li>
@@ -110,12 +119,32 @@
             </a>
           </li>
           <?php }?>
-          <li class="nav-item nav-category">DOCUMENTAÇÃO</li>
+          <li class="nav-item nav-category">FINANCEIRO</li>
           <li class="nav-item">
-            <a class="nav-link" href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.html">
-              <i class="menu-icon mdi mdi-file-document"></i>
-              <span class="menu-title">AJUDA</span>
+            <a class="nav-link  <?php if($err_profile == true) { echo'disabled text-danger';}?>" href="../admin/verservicos.php">
+              <i class="menu-icon mdi mdi-alphabetical"></i>
+              <span class="menu-title">SERVIÇOS</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link  <?php if($err_profile == true) { echo'disabled text-danger';}?>" href="../admin/gerservicos.php">
+              <i class="menu-icon mdi mdi-alphabetical"></i>
+              <span class="menu-title">ADICIONAR SERVIÇO</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <?php if($err_profile == true) { echo'disabled text-danger';}?>" data-bs-toggle="collapse" href="#painel" aria-expanded="false" aria-controls="painel">
+              <i class="menu-icon mdi mdi-file-powerpoint-box"></i>
+              <span class="menu-title">PAINEL</span>
+              <i class="menu-arrow"></i> 
+            </a>
+            <div class="collapse" id="painel">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../admin/paineldep.php">Depósito</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../admin/verport.php">Extrato</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">DOCUMENTAÇÃO</li>
         </ul>
       </nav>
