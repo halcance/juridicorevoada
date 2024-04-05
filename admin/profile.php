@@ -49,7 +49,7 @@ if(isset($_GET["u"]) && $_GET["u"] == $_SESSION["id"]){
       if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $arquivo = $_FILES['image'];
-$pasta = "images/faces/";
+$pasta = "assets/images/faces/";
 $nomeDoArquivo = $arquivo['name'];
 $novoNomeDoArquivo = uniqid();
 $extensao = strtolower(pathinfo($nomeDoArquivo, PATHINFO_EXTENSION));

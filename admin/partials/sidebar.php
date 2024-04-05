@@ -47,9 +47,7 @@
             </a>
             <div class="collapse" id="cras">
               <ul class="nav flex-column sub-menu">
-              <?php if($uss_rank >= 3)  {?>
                 <li class="nav-item"> <a class="nav-link" href="../admin/cadfam.php">Cadastrar</a></li>
-                <?php }?>
                 <li class="nav-item"> <a class="nav-link" href="../admin/gercras.php">Gerenciar</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../admin/craspend.php">Pendências</a></li>
               </ul>
@@ -69,7 +67,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#adocao" aria-expanded="false" aria-controls="adocao">
+            <a class="nav-link <?php if($err_profile == true) { echo'disabled text-danger';}?>" data-bs-toggle="collapse" href="#adocao" aria-expanded="false" aria-controls="adocao">
               <i class="menu-icon mdi mdi-face"></i>
               <span class="menu-title">ADOÇÃO</span>
               <i class="menu-arrow"></i>
@@ -148,5 +146,11 @@
           </li>
           <?php }?>
           <li class="nav-item nav-category">DOCUMENTAÇÃO</li>
+          <li class="nav-item">
+            <a class="nav-link  <?php if($err_profile == true) { echo'disabled text-danger';}?>" href="../admin/admlog.php">
+              <i class="menu-icon mdi mdi-book-open-variant"></i>
+              <span class="menu-title">MANUAL</span>
+            </a>
+          </li>
         </ul>
       </nav>

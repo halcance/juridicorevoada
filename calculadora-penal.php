@@ -50,310 +50,295 @@ include('includes/head.php');
       <div class="row">
          <div id="1" class="col-md-4">
        
-       <h3>CRIMES DIVERSOS:</h3>
-                   <div class="col col-md-12">
-       <input id="Art. 0.1 - Agressão a Funcionário Público" type="checkbox" class="form-check-input" name="crime" value="5|10000|NA" onclick="calcular()">
-       <label class="form-check-label" for="Art. 0.1 - Agressão a Funcionário Público**">Art. 0.1 - Agressão a Funcionário Público**</label>
-           </div>
-           <hr>
-       
-       <h3>CRIMES CONTRA A VIDA:</h3>
-           <div class="col col-md-12">
-       <input id="Art. 1.1 - Homicídio Doloso Qualificado" type="checkbox" class="form-check-input" name="crime" value="15|5000|NA" onclick="calcular()">
-       <label class="form-check-label" for="Art. 1.1 - Homicídio Doloso Qualificado**">Art. 1.1 - Homicídio Doloso Qualificado**</label>
-           </div>
-       
-           <div class="col col-md-12">
-       <input id="Art. 1.2 - Homicídio Doloso" type="checkbox" class="form-check-input" name="crime" value="10|5000|NA" onclick="calcular()">
-       <label class="form-check-label" for="Art. 1.2 - Homicídio Doloso">Art. 1.2 - Homicídio Doloso**</label>
-           </div>
+       <h3>II - CRIMES CONTRA A VIDA:</h3>
        <div class="col col-md-12">
-       <input id="Art. 1.3 - Tentativa de Homicídio" type="checkbox" class="form-check-input" name="crime" value="5|3000|NA" onclick="calcular()">
-       <label class="form-check-label" for="Art. 1.3 - Tentativa de Homicídio">Art. 1.3 - Tentativa de Homicídio**</label>
+       <input id="Art. 5 - Tentativa de Homicídio" type="checkbox" class="form-check-input" name="crime" value="5|3000|NA" onclick="calcular()">
+       <label class="form-check-label" for="Art. 5 - Tentativa de Homicídio">Art. 5 - Tentativa de Homicídio**</label>
            </div>
            <div class="col col-md-12">
-       <input id="Art. 1.4 - Homicídio Culposo" type="checkbox" class="form-check-input" name="crime" value="5|5000|2500" onclick="calcular()">
-       <label class="form-check-label" for="Art. 1.4 - Homicídio Culposo">Art. 1.4 - Homicídio Culposo </label>
+       <input id="Art. 6 - Homicídio Culposo" type="checkbox" class="form-check-input" name="crime" value="5|5000|2500" onclick="calcular()">
+       <label class="form-check-label" for="Art. 6 - Homicídio Culposo">Art. 6 - Homicídio Culposo </label>
            </div>
+           <div class="col col-md-12">
+       <input id="Art. 7 - Homicídio Doloso" type="checkbox" class="form-check-input" name="crime" value="10|5000|NA" onclick="calcular()">
+       <label class="form-check-label" for="Art. 7 - Homicídio Doloso">Art. 7 - Homicídio Doloso**</label>
+           </div>
+           <div class="col col-md-12">
+       <input id="Art. 8 - Homicídio Doloso Qualificado" type="checkbox" class="form-check-input" name="crime" value="10|5000|NA" onclick="calcular()">
+       <label class="form-check-label" for="Art. 8 - Homicídio Doloso Qualificado">Art. 8 - Homicídio Doloso Qualificado**</label>
+           </div>
+           <div class="col col-md-12">
+       <input id="Art. 9 - Omissão de Socorro" type="checkbox" class="form-check-input" name="crime" value="4|2000|4000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 9 - Omissão de Socorro">Art. 9 - Omissão de Socorro</label>
+       </div>
+       <div class="col col-md-12">
+       <input id="Art. 10 - Lesão Corporal" type="checkbox" class="form-check-input" name="crime" value="2|1000|3000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 10 - Lesão Corporal"> Art. 10 - Lesão Corporal</label>
+           </div>
+           
        <hr>
        
        
        <h3>CRIMES CONTRA DIREITOS FUNDAMENTAIS:</h3>
-           <div class="col col-md-12">
-       <input id="Art. 2.1 - Lesão Corporal" type="checkbox" class="form-check-input" name="crime" value="2|1000|3000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 2.1 - Lesão Corporal"> Art. 2.1 - Lesão Corporal</label>
-           </div>
+           
        <div class="col col-md-12">
-       <input id="Art. 2.2 - Sequestro" type="checkbox" class="form-check-input" name="crime" value="10|5000|NA" onclick="calcular()">
-       <label class="form-check-label" for="Art. 2.2 - Sequestro">Art. 2.2 - Sequestro**</label>
+       <input id="Art. 11 - Sequestro" type="checkbox" class="form-check-input" name="crime" value="10|5000|NA" onclick="calcular()">
+       <label class="form-check-label" for="Art. 11 - Sequestro">Art. 11 - Sequestro**</label>
            </div>
+           <div class="col col-md-12">
+       <input id="Art. 12 - Assédio Moral" type="checkbox" class="form-check-input" name="crime" value="10|50000|NA" onclick="calcular()">
+       <label class="form-check-label" for="Art. 12 - Assédio Moral">Art. 12 - Assédio Moral**</label>
+       </div>
+       <div class="col col-md-12">
+       <input id="Art. 13 - Calúnia, Injúria ou Difamação" type="checkbox" class="form-check-input" name="crime" value="5|2500|5000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 13 - Calúnia, Injúria ou Difamação">Art. 13 - Calúnia, Injúria ou Difamação</label>
+       </div>
+       <div class="col col-md-12">
+       <input id="Art. 14 - Invasão de Propriedade" type="checkbox" class="form-check-input" name="crime" value="5|5000|10000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 14 - Invasão de Propriedade">Art. 14 - Invasão de Propriedade</label>
+       </div>
+       <div class="col col-md-12">
+       <input id="Art. 15 - Perturbação do Sossego Alheio" type="checkbox" class="form-check-input" name="crime" value="0|20000|40000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 15 - Perturbação do Sossego Alheio">Art. 15 - Perturbação do Sossego Alheio</label>
+       </div>
        <hr>
        
        
+       <h3>CRIMES CONTRA A LIBERDADE PESSOAL:</h3>
+           
+       <div class="col col-md-12">
+       <input id="Art. 16 - Ameaça" type="checkbox" class="form-check-input" name="crime" value="5|2500|7000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 16 - Ameaça">Art. 16 - Ameaça</label>
+      </div>
+      <div class="col col-md-12">
+           <input id="Art. 17 - Extorsão" type="checkbox" class="form-check-input" name="crime" value="5|10000|12000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 17 - Extorsão">Art. 17 - Extorsão</label>
+       </div>
+       <hr>
        
+       
+       <h3>CRIMES CONTRA A ADMINISTRAÇÃO PÚBLICA:</h3>
+           
+       <div class="col col-md-12">
+       <input id="Art. 18 - Agressão a Funcionário Público" type="checkbox" class="form-check-input" name="crime" value="5|10000|NA" onclick="calcular()">
+       <label class="form-check-label" for="Art. 18 - Agressão a Funcionário Público">Art. 18 - Agressão a Funcionário Público</label>
+      </div>
+      <div class="col col-md-12">
+       <input id="Art. 19 - Falsidade Ideológica" type="checkbox" class="form-check-input" name="crime" value="5|4000|8000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 19 - Falsidade Ideológica">Art. 19 - Falsidade Ideológica</label>
+       </div>
+       <div class="col col-md-12">
+       <input id="Art. 20 - Prevaricação" type="checkbox" class="form-check-input" name="crime" value="10|10000|15000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 20 - Prevaricação">Art. 20 - Prevaricação</label>
+       </div>
+       <div class="col col-md-12">
+       <input id="Art. 21 - Abuso de Autoridade" type="checkbox" class="form-check-input" name="crime" value="10|5000|8000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 21 - Abuso de Autoridade">Art. 21 - Abuso de Autoridade</label>
+       </div>
+       <div class="col col-md-12">
+       <input id="Art. 22 - Falsa Comunicação de Crime" type="checkbox" class="form-check-input" name="crime" value="3|1000|5000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 22 - Falsa Comunicação de Crime">Art. 22 - Falsa Comunicação de Crime</label>
+       </div>
+       <div class="col col-md-12">
+       <input id="Art. 23 - Tentativa de Suborno" type="checkbox" class="form-check-input" name="crime" value="10|4000|8000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 23 - Suborno">Art. 23 - Tentativa de Suborno</label>
+       </div>
+       <div class="col col-md-12">
+       <input id="Art. 24 - Uso indevido do sistema de emergência" type="checkbox" class="form-check-input" name="crime" value="5|4000|8000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 24 - Uso indevido do sistema de emergência">Art. 24 - Uso indevido do sistema de emergência</label>
+      </div>
+      <div class="col col-md-12">
+       <input id="Art. 25 - Desacato" type="checkbox" class="form-check-input" name="crime" value="20|50000|N/A" onclick="calcular()">
+       <label class="form-check-label" for="Art. 25 - Desacato">Art. 25 - Desacato**</label>
+       </div>
+       <div class="col col-md-12">
+       <input id="Art. 25.1 - Desacato x1" type="checkbox" class="form-check-input" name="crime" value="20|50000|N/A" onclick="calcular()">
+       <label class="form-check-label" for="Art. 25.1 - Desacato x1">Art. 25.1 - Desacato x1**</label>
+       </div>
+       <div class="col col-md-12">
+       <input id="Art. 25.2 - Desacato x2" type="checkbox" class="form-check-input" name="crime" value="20|50000|N/A" onclick="calcular()">
+       <label class="form-check-label" for="Art. 25.2 - Desacato x2">Art. 25.2 - Desacato x2**</label>
+       </div>
+       <div class="col col-md-12">
+       <input id="Art. 26 - Desobediência" type="checkbox" class="form-check-input" name="crime" value="0|15000|30000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 26 - Desobediência">Art. 26 - Desobediência</label>
+       </div>
+       <div class="col col-md-12">
+       <input id="Art. 26.1 - Desobediência x1" type="checkbox" class="form-check-input" name="crime" value="0|15000|30000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 26.1 - Desobediência x1">Art. 26.1 - Desobediência x1</label>
+       </div>
+       <div class="col col-md-12">
+       <input id="Art. 26.2 - Desobediência x2" type="checkbox" class="form-check-input" name="crime" value="10|15000|30000" onclick="calcular()">
+        <label class="form-check-label" for="Art. 26.2 - Desobediência x2">Art. 26.2 - Desobediência x2</label>
+       </div>
+       <div class="col col-md-12">
+       <input id="Art. 27 - Obstrução de Justiça" type="checkbox" class="form-check-input" name="crime" value="5|15000|20000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 27 - Obstrução de Justiça">Art. 27 - Obstrução de Justiça</label>
+       </div>
+       <div class="col col-md-12">
+       <input id="Art. 28 - Ocultação de Provas" type="checkbox" class="form-check-input" name="crime" value="4|2500|5000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 28 - Ocultação de Provas">Art. 28 - Ocultação de Provas</label>
+       </div>
+       <div class="col col-md-12"> 
+       <input id="Art. 29 - Resistência a Prisão" type="checkbox" class="form-check-input" name="crime" value="10|15000|30000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 29 - Resistência a Prisão">Art. 29 - Resistência a Prisão</label>
+       </div>
+       <hr>
+      
+       <hr>
        <h3>CRIMES CONTRA O PATRIMÔNIO:</h3>
        <div class="col col-md-12">
-           <input id="Art. 3.1 - Desmanche de Veículos" type="checkbox" class="form-check-input" name="crime" value="10|5000|10000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 3.1 - Desmanche de Veículos">Art. 3.1 - Desmanche de Veículos</label>
+		<input id="Art. 59 - Desmanche de Veículos" type="checkbox" class="form-check-input" name="crime" value="10|5000|10000" onclick="calcular()">
+<label class="form-check-label" for="Art. 59 - Desmanche de Veículos">Art. 59 - Desmanche de Veículos</label>
+	</div>
+    <div class="col col-md-12">
+           <input id="Art. 60 - Roubo" type="checkbox" class="form-check-input" name="crime" value="5|2000|5000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 60 - Roubo">Art. 60 - Roubo</label>
        </div>
        <div class="col col-md-12">
-           <input id="Art. 3.2 - Furto" type="checkbox" class="form-check-input" name="crime" value="5|5000|10000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 3.2 - Furto">Art. 3.2 - Furto </label>
+           <input id="Art. 61 - Furto a Caixa Eletrônico" type="checkbox" class="form-check-input" name="crime" value="10|10000|30000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 61 - Furto a Caixa Eletrônico">Art. 61 - Furto a Caixa Eletrônico </label>
+       </div>   
+       <div class="col col-md-12">
+           <input id="Art. 62 - Furto" type="checkbox" class="form-check-input" name="crime" value="5|5000|10000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 62 - Furto">Art. 62 - Furto </label>
        </div>
        <div class="col col-md-12">
-           <input id="Art. 3.3 - Receptação de Veículos" type="checkbox" class="form-check-input" name="crime" value="5|5000|10000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 3.3 - Receptação de Veículos">Art. 3.3 - Receptação de Veículos </label>
+           <input id="Art. 63 - Receptação de Veículos" type="checkbox" class="form-check-input" name="crime" value="5|5000|10000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 63 - Receptação de Veículos">Art. 63 - Receptação de Veículos </label>
        </div>
        <div class="col col-md-12">
-           <input id="Art. 3.4 - Roubo de Veículos" type="checkbox" class="form-check-input" name="crime" value="10|6000|11000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 3.4 - Roubo de Veículos">Art. 3.4 - Roubo de Veículos</label>
+           <input id="Art. 64 - Roubo de Veículos" type="checkbox" class="form-check-input" name="crime" value="10|6000|11000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 64 - Roubo de Veículos">Art. 64 - Roubo de Veículos</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 3.5 - Tentativa de Furto" type="checkbox" class="form-check-input" name="crime" value="5|8000|12000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 3.5 - Tentativa de Furto">Art. 3.5 - Tentativa de Furto</label>
+       <input id="Art. 65 - Tentativa de Furto" type="checkbox" class="form-check-input" name="crime" value="5|8000|12000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 65 - Tentativa de Furto">Art. 65 - Tentativa de Furto</label>
        </div>
        <div class="col col-md-12">
-           <input id="Art. 3.6 - Furto de Veículos" type="checkbox" class="form-check-input" name="crime" value="6|1000|5000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 3.6 - Furto de Veículos">Art. 3.6 - Furto de Veículos</label>
+           <input id="Art. 66 - Furto de Veículos" type="checkbox" class="form-check-input" name="crime" value="6|1000|5000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 66 - Furto de Veículos">Art. 66 - Furto de Veículos</label>
        </div>
        <hr>
-       
-       
-       
-       <h3>CRIMES DE ROUBOS, FURTOS E SEUS VARIANTES:</h3>
-       <div class="col col-md-12">
-           <input id="Art. 4.1 - Roubo" type="checkbox" class="form-check-input" name="crime" value="5|2000|5000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 4.1 - Roubo">Art. 4.1 - Roubo</label>
-       </div>
-       <div class="col col-md-12">
-           <input id="Art. 4.2 - Furto a Caixa Eletrônico" type="checkbox" class="form-check-input" name="crime" value="10|10000|30000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 4.2 - Furto a Caixa Eletrônico">Art. 4.2 - Furto a Caixa Eletrônico </label>
-       </div>
-       <div class="col col-md-12">
-           <input id="Art. 4.3 - Extorsão" type="checkbox" class="form-check-input" name="crime" value="5|10000|12000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 4.3 - Extorsão">Art. 4.3 - Extorsão</label>
-       </div>
-       <hr>
-       
-       
-       <h3>CRIMES DE PORTE, POSSE E TRÁFICO:</h3>
-       <div class="col col-md-12">
-           <input id="Art. 5.1 - Posse de Peças de Armas" type="checkbox" class="form-check-input" name="crime" value="5|10000|15000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 5.1 - Posse de Peças de Armas">Art. 5.1 - Posse de Peças de Armas </label>
-       </div>
-       <div class="col col-md-12">
-           <input id="Art. 5.2 - Posse de Cápsulas" type="checkbox" class="form-check-input" name="crime" value="5|10000|15000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 5.2 - Posse de Cápsulas">Art. 5.2 - Posse de Cápsulas </label>
-       </div>
-       <div class="col col-md-12">
-           <input id="Art. 5.3 - Tráfico de Armas" type="checkbox" class="form-check-input" name="crime" value="10|10000|20000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 5.3 - Tráfico de Armas">Art. 5.3 - Tráfico de Armas </label>
-       </div>
-       <div class="col col-md-12">
-           <input id="Art. 5.4 - Tráfico de Itens Ilegais" type="checkbox" class="form-check-input" name="crime" value="10|15000|20000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 5.4 - Tráfico de Itens Ilegais">Art. 5.4 - Tráfico de Itens Ilegais </label>
-       </div>
-       <div class="col col-md-12">
-       <input id="Art. 5.5 - Porte de Arma Pesada" type="checkbox" class="form-check-input" name="crime" value="5|15000|20000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 5.5 - Porte de Arma Pesada">Art. 5.5 - Porte de Arma Pesada </label>
-       </div>
-       <div class="col col-md-12">
-       <input id="Art. 5.6 - Porte de Arma Leve" type="checkbox" class="form-check-input" name="crime" value="3|10000|15000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 5.6 - Porte de Arma Leve">Art. 5.6 - Porte de Arma Leve </label>
-       </div>
-       <div class="col col-md-12">
-       <input id="Art. 5.7 - Disparo de Arma de Fogo" type="checkbox" class="form-check-input" name="crime" value="4|5000|10000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 5.7 - Disparo de Arma de Fogo">Art. 5.7 - Disparo de Arma de Fogo </label>
-       </div>
-       <div class="col col-md-12">
-       <input id="Art. 5.8 - Tráfico de Munições (+100)" type="checkbox" class="form-check-input  escolha2" name="crime" value="8|5000|8000" onclick="limparCheckboxes22(this)">
-       <label class="form-check-label" for="Art. 5.8 - Tráfico de Munições (+100)">Art. 5.8 - Tráfico de Munições (+100) </label>
-       </div>
-       <div class="col col-md-12">
-       <input id="Art. 5.9 - Posse de Munição (-100)" type="checkbox" class="form-check-input  escolha2" name="crime" value="3|5000|8000" onclick="limparCheckboxes22(this)">
-       <label class="form-check-label" for="Art. 5.9 - Posse de Munição (-100)">Art. 5.9 - Posse de Munição (-100) </label>
-       </div>
-       <div class="col col-md-12">
-       <input id="Art. 5.10 - Posse de Colete" type="checkbox" class="form-check-input" name="crime" value="2|1000|5000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 5.10 - Posse de Colete">Art. 5.10 - Posse de Colete </label>
-       </div>
-       <div class="col col-md-12">
-       <input id="Art. 5.11 - Porte de Arma Branca" type="checkbox" class="form-check-input" name="crime" value="0|5000|7000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 5.11 - Porte de Arma Branca">Art. 5.11 - Porte de Arma Branca </label>
-       </div>
-       <div class="col col-md-12">
-       <input id="Art. 5.12 - Tráfico de Drogas (+100)" type="checkbox" class="form-check-input escolha1" name="crime" value="10|50000|80000" onclick="limparCheckboxes(this)">
-       <label class="form-check-label" for="Art. 5.12 - Tráfico de Drogas (+100)">Art. 5.12 - Tráfico de Drogas (+100) </label>
-       </div>
-       <div class="col col-md-12">
-       <input id="Art. 5.13 - Aviãozinho (6 a 100)" type="checkbox" class="form-check-input escolha1" name="crime" value="20|15000|30000" onclick="limparCheckboxes(this)">
-       <label class="form-check-label" for="Art. 5.13 - Aviãozinho (6 a 100)">Art. 5.13 - Aviãozinho (6 a 100) </label>
-       </div>
-       <div class="col col-md-12">
-       <input id="Art. 5.14 - Posse de Componentes Narcóticos" type="checkbox" class="form-check-input" name="crime" value="10|5000|10000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 5.14 - Posse de Componentes Narcóticos">Art. 5.14 - Posse de Componentes Narcóticos </label>
-       </div>
-       <div class="col col-md-12">
-       <input id="Art. 5.15 - Posse de Drogas (1 a 5)" type="checkbox" class="form-check-input escolha1" name="crime" value="0|10000|0" onclick="limparCheckboxes(this)">
-       <label class="form-check-label" for="Art. 5.15 - Posse de Drogas (1 a 5)">Art. 5.15 - Posse de Drogas (1 a 5)</label>
-       </div>
-       <div class="col col-md-12">
-       <input id="Art. 5.16 - Posse de Itens Ilegais" type="checkbox" class="form-check-input" name="crime" value="5|10000|15000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 5.16 - Posse de Itens Ilegais">Art. 5.16 - Posse de Itens Ilegais</label>
-       </div>
-       <div class="col col-md-12">
-       <input id="Art. 5.17 - Dinheiro Sujo" type="checkbox" class="form-check-input" name="crime" value="10|100|20000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 5.17 - Dinheiro Sujo">Art. 5.17 - Dinheiro Sujo</label>
-       
-       </div>
-       
-       
-       </div> 
+       </div>         <!-- FIM DA COLUNA -->
        <div id="2" class="col-md-4">
        
-       <h3>CRIMES CONTRA A ORDEM PUBLICA:</h3>
+       <h3>CRIMES CONTRA A ORDEM PÚBLICA:</h3>
        <div class="col col-md-12">
-       <input id="Art. 6.1 - Falsidade Ideológica" type="checkbox" class="form-check-input" name="crime" value="5|4000|8000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.1 - Falsidade Ideológica">Art. 6.1 - Falsidade Ideológica</label>
+       <input id="Art. 30 - Dano a Patrimônio Público" type="checkbox" class="form-check-input" name="crime" value="5|2000|4000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 30 - Dano a Patrimônio Público">Art. 30 - Dano a Patrimônio Público</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.2 - Formação de Quadrilha" type="checkbox" class="form-check-input" name="crime" value="8|5000|9000" onclick="calcular()">
-           <label class="form-check-label" for="Art. 6.2 - Formação de Quadrilha">Art. 6.2 - Associação Criminosa</label>
+       <input id="Art. 31 - Atentado ao Pudor" type="checkbox" class="form-check-input" name="crime" value="10|10000|20000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 31 - Atentado ao Pudor">Art. 31 - Atentado ao Pudor</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.3 - Apologia ao Crime" type="checkbox" class="form-check-input" name="crime" value="5|3000|5000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.3 - Apologia ao Crime">Art. 6.3 - Apologia ao Crime</label>
+       <input id="Art. 32 - Formação de Quadrilha" type="checkbox" class="form-check-input" name="crime" value="8|5000|9000" onclick="calcular()">
+           <label class="form-check-label" for="Art. 32 - Formação de Quadrilha">Art. 32 - Associação Criminosa</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.4 - Posse de Arma em Público" type="checkbox" class="form-check-input" name="crime" value="5|2000|5000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.4 - Posse de Arma em Público">Art. 6.4 - Posse de Arma em Público</label>
+       <input id="Art. 33 - Apologia ao Crime" type="checkbox" class="form-check-input" name="crime" value="5|3000|5000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 33 - Apologia ao Crime">Art. 33 - Apologia ao Crime</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.5 - Tentativa de Suborno" type="checkbox" class="form-check-input" name="crime" value="10|4000|8000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.5 - Suborno">Art. 6.5 - Tentativa de Suborno</label>
+       <input id="Art. 34 - Posse de Arma em Público" type="checkbox" class="form-check-input" name="crime" value="5|2000|5000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 34 - Posse de Arma em Público">Art. 34 - Posse de Arma em Público</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.6 - Ameaça" type="checkbox" class="form-check-input" name="crime" value="5|2500|7000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.6 - Ameaça">Art. 6.6 - Ameaça</label>
-      </div>
-       <div class="col col-md-12">
-       <input id="Art. 6.7 - Falsa Comunicação de Crime" type="checkbox" class="form-check-input" name="crime" value="3|1000|5000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.7 - Falsa Comunicação de Crime">Art. 6.7 - Falsa Comunicação de Crime</label>
+       <input id="Art. 35 - Uso de Máscara" type="checkbox" class="form-check-input" name="crime" value="0|5000|10000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 35 - Uso de Máscara">Art. 35 - Uso de Máscara</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.8 - Uso Indevido do 190/192" type="checkbox" class="form-check-input" name="crime" value="5|4000|8000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.8 - Uso Indevido do 190/192">Art. 6.8 - Uso Indevido do 190/192</label>
-      </div>
-       <div class="col col-md-12">
-       <input id="Art. 6.10 - Desobediência 01" type="checkbox" class="form-check-input" name="crime" value="0|15000|30000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.10 - Desobediência 01">Art. 6.10 - Desobediência 01</label>
+       <input id="Art. 36 - Uso de Equipamentos Restritos" type="checkbox" class="form-check-input" name="crime" value="5|5000|7000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 36 - Uso de Equipamentos Restritos">Art. 36 - Uso de Equipamentos Restritos</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.11 - Desobediência 02" type="checkbox" class="form-check-input" name="crime" value="0|15000|30000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.11 - Desobediência 02">Art. 6.11 - Desobediência 02</label>
+       <input id="Art. 37 - Vadiagem" type="checkbox" class="form-check-input" name="crime" value="5|10000|15000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 37 - Vadiagem">Art. 37 - Vadiagem</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.12 - Desobediência 03" type="checkbox" class="form-check-input" name="crime" value="10|15000|30000" onclick="calcular()">
-        <label class="form-check-label" for="Art. 6.12 - Desobediência 03">Art. 6.12 - Desobediência 03</label>
+       <input id="Art. 38 - Tentativa de Fuga" type="checkbox" class="form-check-input" name="crime" value="10|5000|10000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 38 - Tentativa de Fuga">Art. 38 - Tentativa de Fuga</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.13 - Assédio Moral" type="checkbox" class="form-check-input" name="crime" value="10|50000|NA" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.13 - Assédio Moral">Art. 6.13 - Assédio Moral**</label>
+       <input id="Art. 39 - Vandalismo" type="checkbox" class="form-check-input" name="crime" value="5|4000|8000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 39 - Vandalismo">Art. 39 - Vandalismo</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.14 - Atentado ao Pudor" type="checkbox" class="form-check-input" name="crime" value="10|10000|20000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.14 - Atentado ao Pudor">Art. 6.14 - Atentado ao Pudor</label>
+       <input id="Art. 40 - Réu Reincidente" type="checkbox" class="form-check-input" name="crime" value="5|0|0" onclick="calcular()">
+       <label class="form-check-label" for="Art. 40 - Réu Reincidente">Art. 40 - Réu Reincidente</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.15 - Vandalismo" type="checkbox" class="form-check-input" name="crime" value="5|4000|8000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.15 - Vandalismo">Art. 6.15 - Vandalismo</label>
+       <input id="Art. 41 - Cúmplice" type="checkbox" class="form-check-input" name="crime" value="0|0|5000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 41 - Cúmplice">Art. 41 - Cúmplice</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.16 - Vandalismo a Propriedade do Governo" type="checkbox" class="form-check-input" name="crime" value="5|4000|8000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.16 - Vandalismo a Propriedade do Governo ">Art. 6.16 - Vandalismo a Propriedade do Governo </label>
+           <input id="Art. 42 - Tráfico de Armas" type="checkbox" class="form-check-input" name="crime" value="10|10000|20000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 42 - Tráfico de Armas">Art. 42 - Tráfico de Armas </label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.17 - Invasão de Propriedade" type="checkbox" class="form-check-input" name="crime" value="5|5000|10000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.17 - Invasão de Propriedade">Art. 6.17 - Invasão de Propriedade</label>
+           <input id="Art. 43 - Tráfico de Itens Ilegais" type="checkbox" class="form-check-input" name="crime" value="10|15000|20000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 43 - Tráfico de Itens Ilegais">Art. 43 - Tráfico de Itens Ilegais </label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.18 - Abuso de Autoridade" type="checkbox" class="form-check-input" name="crime" value="10|5000|8000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.18 - Abuso de Autoridade">Art. 6.18 - Abuso de Autoridade</label>
+       <input id="Art. 44 - Tráfico de Munições (+100)" type="checkbox" class="form-check-input  escolha2" name="crime" value="8|5000|8000" onclick="limparCheckboxes22(this)">
+       <label class="form-check-label" for="Art. 44 - Tráfico de Munições (+100)">Art. 44 - Tráfico de Munições (+100) </label>
        </div>
        <div class="col col-md-12">
-       
-       <input id="Art. 6.19 - Uso de Máscara" type="checkbox" class="form-check-input" name="crime" value="0|5000|10000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.19 - Uso de Máscara">Art. 6.19 - Uso de Máscara</label>
+       <input id="Art. 45 - Tráfico de Drogas (+100)" type="checkbox" class="form-check-input escolha1" name="crime" value="10|50000|80000" onclick="limparCheckboxes(this)">
+       <label class="form-check-label" for="Art. 45 - Tráfico de Drogas (+100)">Art. 45 - Tráfico de Drogas (+100) </label>
        </div>
        <div class="col col-md-12">
-       
-       <input id="Art. 6.20 - Uso de Equipamentos Restritos" type="checkbox" class="form-check-input" name="crime" value="5|5000|7000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.20 - Uso de Equipamentos Restritos">Art. 6.20 - Uso de Equipamentos Restritos</label>
+       <input id="Art. 46 - Porte de Arma Pesada" type="checkbox" class="form-check-input" name="crime" value="5|15000|20000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 46 - Porte de Arma Pesada">Art. 46 - Porte de Arma Pesada </label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.21 - Omissão de Socorro" type="checkbox" class="form-check-input" name="crime" value="4|2000|4000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.21 - Omissão de Socorro">Art. 6.21 - Omissão de Socorro</label>
+       <input id="Art. 47 - Porte de Arma Leve" type="checkbox" class="form-check-input" name="crime" value="3|10000|15000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 47 - Porte de Arma Leve">Art. 47 - Porte de Arma Leve </label>
        </div>
        <div class="col col-md-12">
-       
-       <input id="Art. 6.22 - Tentativa de Fuga" type="checkbox" class="form-check-input" name="crime" value="10|5000|10000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.22 - Tentativa de Fuga">Art. 6.22 - Tentativa de Fuga</label>
+       <input id="Art. 48 - Porte de Arma Branca" type="checkbox" class="form-check-input" name="crime" value="0|5000|7000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 48 - Porte de Arma Branca">Art. 48 - Porte de Arma Branca </label>
        </div>
        <div class="col col-md-12">
-       
-       <input id="Art. 6.23 - Desacato 01" type="checkbox" class="form-check-input" name="crime" value="20|50000|N/A" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.23 - Desacato 01">Art. 6.23 - Desacato 01**</label>
+           <input id="Art. 49 - Posse de Peças de Armas" type="checkbox" class="form-check-input" name="crime" value="5|10000|15000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 49 - Posse de Peças de Armas">Art. 49 - Posse de Peças de Armas </label>
        </div>
        <div class="col col-md-12">
-       
-       <input id="Art. 6.24 - Desacato 02" type="checkbox" class="form-check-input" name="crime" value="20|50000|N/A" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.24 - Desacato 02">Art. 6.24 - Desacato 02**</label>
+           <input id="Art. 50 - Posse de Cápsulas" type="checkbox" class="form-check-input" name="crime" value="5|10000|15000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 50 - Posse de Cápsulas">Art. 50 - Posse de Cápsulas </label>
        </div>
        <div class="col col-md-12">
-       
-       <input id="Art. 6.25 - Desacato 03" type="checkbox" class="form-check-input" name="crime" value="20|50000|N/A" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.25 - Desacato 03">Art. 6.25 - Desacato 03**</label>
+       <input id="Art. 51 - Disparo de Arma de Fogo" type="checkbox" class="form-check-input" name="crime" value="4|5000|10000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 51 - Disparo de Arma de Fogo">Art. 51 - Disparo de Arma de Fogo </label>
        </div>
        <div class="col col-md-12">
-       
-       <input id="Art. 6.26 - Resistência a Prisão" type="checkbox" class="form-check-input" name="crime" value="10|15000|30000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.26 - Resistência a Prisão">Art. 6.26 - Resistência a Prisão</label>
+       <input id="Art. 52 - Posse de Munição (-100)" type="checkbox" class="form-check-input  escolha2" name="crime" value="3|5000|8000" onclick="limparCheckboxes22(this)">
+       <label class="form-check-label" for="Art. 52 - Posse de Munição (-100)">Art. 52 - Posse de Munição (-100) </label>
        </div>
        <div class="col col-md-12">
-       
-       <input id="Art. 6.27 - Réu Reincidente" type="checkbox" class="form-check-input" name="crime" value="5|0|0" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.27 - Réu Reincidente">Art. 6.27 - Réu Reincidente</label>
+       <input id="Art. 53 - Posse de Colete" type="checkbox" class="form-check-input" name="crime" value="2|1000|5000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 53 - Posse de Colete">Art. 53 - Posse de Colete </label>
        </div>
        <div class="col col-md-12">
-       
-       <input id="Art. 6.28 - Cúmplice" type="checkbox" class="form-check-input" name="crime" value="0|0|5000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.28 - Cúmplice">Art. 6.28 - Cúmplice</label>
+       <input id="Art. 54 - Aviãozinho (6 a 100)" type="checkbox" class="form-check-input escolha1" name="crime" value="20|15000|30000" onclick="limparCheckboxes(this)">
+       <label class="form-check-label" for="Art. 54 - Aviãozinho (6 a 100)">Art. 54 - Aviãozinho (6 a 100) </label>
        </div>
        <div class="col col-md-12">
-       
-       <input id="Art. 6.29 - Obstrução de Justiça" type="checkbox" class="form-check-input" name="crime" value="5|15000|20000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.29 - Obstrução de Justiça">Art. 6.29 - Obstrução de Justiça</label>
+       <input id="Art. 55 - Posse de Componentes Narcóticos" type="checkbox" class="form-check-input" name="crime" value="10|5000|10000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 55 - Posse de Componentes Narcóticos">Art. 55 - Posse de Componentes Narcóticos </label>
        </div>
        <div class="col col-md-12">
-       
-       <input id="Art. 6.30 - Ocultação de Provas" type="checkbox" class="form-check-input" name="crime" value="4|2500|5000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.30 - Ocultação de Provas">Art. 6.30 - Ocultação de Provas</label>
+       <input id="Art. 56 - Posse de Drogas (1 a 5)" type="checkbox" class="form-check-input escolha1" name="crime" value="0|10000|0" onclick="limparCheckboxes(this)">
+       <label class="form-check-label" for="Art. 56 - Posse de Drogas (1 a 5)">Art. 56 - Posse de Drogas (1 a 5)</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.31 - Vadiagem" type="checkbox" class="form-check-input" name="crime" value="5|10000|15000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.31 - Vadiagem">Art. 6.31 - Vadiagem</label>
+       <input id="Art. 57 - Posse de Itens Ilegais" type="checkbox" class="form-check-input" name="crime" value="5|10000|15000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 57 - Posse de Itens Ilegais">Art. 57 - Posse de Itens Ilegais</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 6.32 - Prevaricação" type="checkbox" class="form-check-input" name="crime" value="10|10000|15000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.32 - Perjurio">Art. 6.32 - Prevaricação</label>
-       </div>
-       <div class="col col-md-12">
-       <input id="Art. 6.33 - Perturbação do Sossego Alheio" type="checkbox" class="form-check-input" name="crime" value="0|20000|40000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.33 - Perturbação do Sossego Alheio">Art. 6.33 - Perturbação do Sossego Alheio</label>
-       </div>
-       <div class="col col-md-12">
-       <input id="Art. 6.34 - Calúnia, Injúria ou Difamação" type="checkbox" class="form-check-input" name="crime" value="5|2500|5000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 6.34 - Calúnia, Injúria ou Difamação">Art. 6.34 - Calúnia, Injúria ou Difamação</label>
+       <input id="Art. 58 - Dinheiro Sujo" type="checkbox" class="form-check-input" name="crime" value="10|100|20000" onclick="calcular()">
+       <label class="form-check-label" for="Art. 58 - Dinheiro Sujo">Art. 58 - Dinheiro Sujo</label>
        </div>
        
        <hr>
@@ -361,49 +346,45 @@ include('includes/head.php');
        
        <h3>CRIMES DE TRÂNSITO:</h3>
        <div class="col col-md-12">
-       <input id="Art. 7.1 - Condução Imprudente" type="checkbox" class="form-check-input" name="crime" value="2|1000|2500" onclick="calcular()">
-       <label class="form-check-label" for="Art. 7.1 - Condução Imprudente">Art. 7.1 - Condução Imprudente</label>
+       <input id="Art. 67 - Condução Imprudente" type="checkbox" class="form-check-input" name="crime" value="2|1000|2500" onclick="calcular()">
+       <label class="form-check-label" for="Art. 67 - Condução Imprudente">Art. 67 - Condução Imprudente</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 7.2 - Dirigir na Contra Mão" type="checkbox" class="form-check-input" name="crime" value="0|15000|0" onclick="calcular()">
-       <label class="form-check-label" for="Art. 7.2 - Dirigir na Contra Mão">Art. 7.2 - Dirigir na Contra Mão</label>
+       <input id="Art. 68 - Dirigir na Contra Mão" type="checkbox" class="form-check-input" name="crime" value="0|15000|0" onclick="calcular()">
+       <label class="form-check-label" for="Art. 68 - Dirigir na Contra Mão">Art. 68 - Dirigir na Contra Mão</label>
        </div>
        <div class="col col-md-12">
        
-       <input id="Art. 7.3 - Alta Velocidade" type="checkbox" class="form-check-input" name="crime" value="0|10000|0" onclick="calcular()">
-       <label class="form-check-label" for="Art. 7.3 - Alta Velocidade">Art. 7.3 - Alta Velocidade</label>
+       <input id="Art. 69 - Alta Velocidade" type="checkbox" class="form-check-input" name="crime" value="0|10000|0" onclick="calcular()">
+       <label class="form-check-label" for="Art. 69 - Alta Velocidade">Art. 69 - Alta Velocidade</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 7.4 - Poluição Sonora" type="checkbox" class="form-check-input" name="crime" value="0|10000|0" onclick="calcular()">
-       <label class="form-check-label" for="Art. 7.4 - Poluição Sonora">Art. 7.4 - Poluição Sonora</label>
+       <input id="Art. 70 - Poluição Sonora" type="checkbox" class="form-check-input" name="crime" value="0|10000|0" onclick="calcular()">
+       <label class="form-check-label" for="Art. 70 - Poluição Sonora">Art. 70 - Poluição Sonora</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 7.5 - Corridas Ilegais" type="checkbox" class="form-check-input" name="crime" value="5|25000|0" onclick="calcular()">
-       <label class="form-check-label" for="Art. 7.5 - Corridas Ilegais">Art. 7.5 - Corridas Ilegais</label>
+       <input id="Art. 71 - Corridas Ilegais" type="checkbox" class="form-check-input" name="crime" value="5|25000|0" onclick="calcular()">
+       <label class="form-check-label" for="Art. 71 - Corridas Ilegais">Art. 71 - Corridas Ilegais</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 7.6 - Uso Excessivo de Insulfilm" type="checkbox" class="form-check-input" name="crime" value="0|10000|0" onclick="calcular()">
-       <label class="form-check-label" for="Art. 7.6 - Uso Excessivo de Insulfilm">Art. 7.6 - Uso Excessivo de Insulfilm</label>
+       <input id="Art. 72 - Uso Excessivo de Insulfilm" type="checkbox" class="form-check-input" name="crime" value="0|10000|0" onclick="calcular()">
+       <label class="form-check-label" for="Art. 72 - Uso Excessivo de Insulfilm">Art. 72 - Uso Excessivo de Insulfilm</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 7.7 - Veículo Muito Danificado" type="checkbox" class="form-check-input" name="crime" value="0|5000|0" onclick="calcular()">
-       <label class="form-check-label" for="Art. 7.7 - Veículo Muito Danificado">Art. 7.7 - Veículo Muito Danificado</label>
+       <input id="Art. 73 - Veículo Irregular" type="checkbox" class="form-check-input" name="crime" value="0|5000|0" onclick="calcular()">
+       <label class="form-check-label" for="Art. 73 - Veículo Irregular">Art. 73 - Veículo Irregular</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 7.8 - Veiculo Ilegalmente Estacionado" type="checkbox" class="form-check-input" name="crime" value="0|5000|0" onclick="calcular()">
-       <label class="form-check-label" for="Art. 7.8 - Veiculo Ilegalmente Estacionado">Art. 7.8 - Veiculo Ilegalmente Estacionado</label>
+       <input id="Art. 74 - Estacionar em área proibida" type="checkbox" class="form-check-input" name="crime" value="0|5000|0" onclick="calcular()">
+       <label class="form-check-label" for="Art. 74 - Estacionar em área proibida">Art. 74 - Estacionar em área proibida</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 7.9 - Não Ceder Passagem a Viaturas" type="checkbox" class="form-check-input" name="crime" value="0|2000|0" onclick="calcular()">
-       <label class="form-check-label" for="Art. 7.9 - Não Ceder Passagem a Viaturas">Art. 7.9 - Não Ceder Passagem a Viaturas</label>
+       <input id="Art. 75 - Não Ceder Passagem a Viaturas" type="checkbox" class="form-check-input" name="crime" value="0|2000|0" onclick="calcular()">
+       <label class="form-check-label" for="Art. 75 - Não Ceder Passagem a Viaturas">Art. 75 - Não Ceder Passagem a Viaturas</label>
        </div>
        <div class="col col-md-12">
-       <input id="Art. 7.10 - Impedir o Fluxo do Tráfego" type="checkbox" class="form-check-input" name="crime" value="0|2000|0" onclick="calcular()">
-       <label class="form-check-label" for="Art. 7.10 - Impedir o Fluxo do Tráfego">Art. 7.10 - Impedir o Fluxo do Tráfego</label>
-       </div>
-       <div class="col col-md-12">
-       <input id="Art. 7.11 - Dano a Patrimônio Público" type="checkbox" class="form-check-input" name="crime" value="5|2000|4000" onclick="calcular()">
-       <label class="form-check-label" for="Art. 7.11 - Dano a Patrimônio Público">Art. 7.11 - Dano a Patrimônio Público</label>
+       <input id="Art. 76 - Impedir o Fluxo do Tráfego" type="checkbox" class="form-check-input" name="crime" value="0|2000|0" onclick="calcular()">
+       <label class="form-check-label" for="Art. 76 - Impedir o Fluxo do Tráfego">Art. 76 - Impedir o Fluxo do Tráfego</label>
        </div>
        <hr>
        <div class="col col-md-12">
@@ -1048,6 +1029,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
    <script src="js/jquery-1.12.1.min.js"></script>
    <!-- popper js -->
    <script src="js/popper.min.js"></script>
+   <script src="js/sweetalert2.js"></script>
    <!-- bootstrap js -->
    <script src="js/bootstrap.min.js"></script>
    <!-- easing js -->

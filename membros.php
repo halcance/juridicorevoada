@@ -1,10 +1,5 @@
 <?php
-require('config.php');
 $page_title = "Membros";
-
-// CONSULTA TOTAL DE USUÁRIOS
-$stmt = $pdo->prepare("SELECT * FROM users ORDER BY rank DESC");
-$stmt->execute();
 
 ?>
 <!doctype html>
@@ -46,7 +41,11 @@ $stmt->execute();
                 </div>
             </div>
             <div class="row justify-content-between">
-            <?php while($dados = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
+            <?php 
+            // CONSULTA TOTAL DE USUÁRIOS
+$stmt = $pdo->prepare("SELECT * FROM users ORDER BY rank DESC");
+$stmt->execute();
+            while($dados = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_offer_part">
                         <div class="single_offer">

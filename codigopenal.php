@@ -157,7 +157,7 @@ include('includes/head.php');
           <br>
           <p>⚖️ <strong>Art. 18</strong> Agressão a Funcionário Público</p>
           <p>Agressão a funcionário que exerce cargo público durante o exercício de sua função.</p>
-          <p>Pena - reclusão, 5 meses e multa de 10.000 dólare</p>
+          <p>Pena - reclusão, 5 meses e multa de 10.000 dólares</p>
           <br>
           <p>⚖️ <strong>Art. 19</strong> Falsidade Ideológica</p>
           <p>Omitir, em documento público ou particular, declaração que dele devia constar, ou nele inserir ou fazer inserir declaração falsa ou diversa da que devia ser escrita, com o fim de prejudicar direito, criar obrigação ou alterar a verdade sobre fato juridicamente relevante</p>
@@ -319,7 +319,7 @@ include('includes/head.php');
           <p>Portar drogas ilícitas em quantidade menor que 6 unidades.</p>
           <p>Pena - multa de 10.000,00 dólares</p>
           <br>
-          <p>⚖️ <strong>Art. 57</strong> Tráfico de Itens Ilegais</p>
+          <p>⚖️ <strong>Art. 57</strong> Posse de Itens Ilegais</p>
           <p>Distribuição e porte de itens de uso restrito às autoridades competentes.</p>
           <p>Pena - reclusão, 5 meses e multa de 10.000,00 dólares</p>
           <br>

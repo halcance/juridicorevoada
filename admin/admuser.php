@@ -144,10 +144,10 @@ if(isset($_GET['active'])){
                           } ?>
                           </td>
                           <td>
-                          <?php if($dados["active"] == 1){ ?>
+                          <?php if($dados["active"] == 0){ ?>
                           <a class="btn btn-sm btn-primary" href="?active=<?php echo $dados["id"] ?>"><i class="mdi mdi-account-plus"></i></a>
                          <?php } ?>
-                         <?php if($dados["active"] == 0 || $dados["rank"] >= $_SESSION["rank"]){ ?> 
+                         <?php if($dados["active"] == 1 || $dados["rank"] >= $_SESSION["rank"]){ ?> 
                           <a class="btn btn-sm btn-secondary" href="?deactive=<?php echo $dados["id"] ?>"><i class="mdi mdi-account-minus"></i></a>
                           <?php } ?>
                           </td>
@@ -171,26 +171,6 @@ if(isset($_GET['active'])){
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
-  <!-- plugins:js -->
-  <script src="../admin/vendors/js/vendor.bundle.base.js"></script>
-  <!-- endinject -->
-  <!-- Plugin js for this page -->
-  <script src="../admin/vendors/typeahead.js/typeahead.bundle.min.js"></script>
-  <script src="../admin/vendors/select2/select2.min.js"></script>
-  <script src="../admin/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-  <!-- End plugin js for this page -->
-  <!-- inject:js -->
-  <script src="../admin/js/off-canvas.js"></script>
-  <script src="../admin/js/hoverable-collapse.js"></script>
-  <script src="../admin/js/template.js"></script>
-  <script src="../admin/js/settings.js"></script>
-  <script src="../admin/js/todolist.js"></script>
-  <!-- endinject -->
-  <!-- Custom js for this page-->
-  <script src="../admin/js/file-upload.js"></script>
-  <script src="../admin/js/typeahead.js"></script>
-  <script src="../admin/js/select2.js"></script>
-  <!-- End custom js for this page-->
 </body>
 
 </html>
