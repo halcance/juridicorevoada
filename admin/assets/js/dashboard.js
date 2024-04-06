@@ -11,10 +11,10 @@
       saleGradientBg2.addColorStop(0, 'rgba(0, 208, 255, 0.19)');
       saleGradientBg2.addColorStop(1, 'rgba(0, 208, 255, 0.03)');
       var salesTopData = {
-          labels: ["SUN","sun", "MON", "mon", "TUE","tue", "WED", "wed", "THU", "thu", "FRI", "fri", "SAT"],
+          labels: ["DOM","dom", "SEG", "seg", "TER","ter", "QUA", "qua", "QUI", "qui", "SEX", "sex", "SAB"],
           datasets: [{
-              label: 'This week',
-              data: [50, 110, 60, 290, 200, 115, 130, 170, 90, 210, 240, 280, 200],
+              label: 'Este mês',
+              data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
               backgroundColor: saleGradientBg,
               borderColor: [
                   '#1F3BB3',
@@ -27,8 +27,8 @@
               pointBackgroundColor: ['#1F3BB3)', '#1F3BB3', '#1F3BB3', '#1F3BB3','#1F3BB3)', '#1F3BB3', '#1F3BB3', '#1F3BB3','#1F3BB3)', '#1F3BB3', '#1F3BB3', '#1F3BB3','#1F3BB3)'],
               pointBorderColor: ['#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff','#fff',],
           },{
-            label: 'Last week',
-            data: [30, 150, 190, 250, 120, 150, 130, 20, 30, 15, 40, 95, 180],
+            label: 'Mês passado',
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
             backgroundColor: saleGradientBg2,
             borderColor: [
                 '#52CDFF',
@@ -381,7 +381,7 @@
               fill: true, // 3: no fill
               
           },{
-            label: 'Este mês',
+            label: 'Mês atual',
             data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
             backgroundColor: "#1F3BB3",
             borderColor: [
@@ -461,10 +461,10 @@
     if ($("#marketingOverview-dark").length) {
       var marketingOverviewChartDark = document.getElementById("marketingOverview-dark").getContext('2d');
       var marketingOverviewDataDark = {
-          labels: ["JAN","FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OUT", "NOV", "DEZ"],
+          labels: ["JAN","FEV", "MAR", "ABR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
           datasets: [{
-              label: 'Mês passado',
-              data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+              label: 'Last week',
+              data: [110, 220, 200, 190, 220, 110, 210, 110, 205, 202, 201, 150],
               backgroundColor: "#52CDFF",
               borderColor: [
                   '#52CDFF',
@@ -473,8 +473,8 @@
               fill: true, // 3: no fill
               
           },{
-            label: 'Este mês',
-            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            label: 'This week',
+            data: [215, 290, 210, 250, 290, 230, 290, 210, 280, 220, 190, 300],
             backgroundColor: "#1F3BB3",
             borderColor: [
                 '#1F3BB3',
@@ -554,27 +554,30 @@
       var doughnutChartCanvas = $("#doughnutChart").get(0).getContext("2d");
       var doughnutPieData = {
         datasets: [{
-          data: [40, 20, 30, 10],
+          data: [0, 0, 0, 0, 0],
           backgroundColor: [
             "#1F3BB3",
             "#FDD0C7",
             "#52CDFF",
+            "#6f7013",
             "#81DADA"
           ],
           borderColor: [
             "#1F3BB3",
             "#FDD0C7",
             "#52CDFF",
+            "#6f7013",
             "#81DADA"
           ],
         }],
   
         // These labels appear in the legend and in the tooltips when hovering different arcs
         labels: [
-          'Total',
-          'Net',
-          'Gross',
-          'AVG',
+          'AS',
+          'NO',
+          'PO',
+          'AD',
+          'CA',
         ]
       };
       var doughnutPieOptions = {
@@ -705,7 +708,7 @@
     if ($("#leaveReport-dark").length) {
       var leaveReportChartDark = document.getElementById("leaveReport-dark").getContext('2d');
       var leaveReportDataDark = {
-          labels: ["JAN","FEB", "MAR", "APR", "MAY"],
+          labels: ["JAN","FEV", "MAR", "ABR", "MAI"],
           datasets: [{
               label: 'Last week',
               data: [18, 25, 39, 11, 24],

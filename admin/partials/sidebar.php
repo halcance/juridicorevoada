@@ -112,6 +112,12 @@
               <span class="menu-title">SERVIÇOS</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link  <?php if($err_profile == true) { echo'disabled text-danger';}?>" href="../admin/vendas.php">
+              <i class="menu-icon mdi mdi-shopping"></i>
+              <span class="menu-title">VENDAS</span>
+            </a>
+          </li>
           <?php if($uss_rank >= 5)  {?>
           <li class="nav-item">
             <a class="nav-link  <?php if($err_profile == true) { echo'disabled text-danger';}?>" href="../admin/gerservicos.php">
